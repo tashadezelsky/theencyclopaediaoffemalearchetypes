@@ -1,0 +1,7 @@
+body {
+    font-family: sans-serif;
+    background-color: #FFF000;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
