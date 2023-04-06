@@ -1,7 +1,12 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #FFF000;
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
+}
+
+@font-face {
+    font-family: neuehaas;
+    src: url(neuehaasroman.ttf);
 }
