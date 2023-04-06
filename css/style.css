@@ -1,12 +1,20 @@
-body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #FFF000;
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 @font-face {
     font-family: neuehaas;
     src: url(neuehaasroman.ttf);
+}
+
+body {
+    background-color:#fff000;
+    color: black;
+    font-family:neuehaas;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    text-align: justify;
+    text-align: center;
+    line-height: 40px;
+    margin: 0;
+    margin-bottom: 3rem;
+    
 }
