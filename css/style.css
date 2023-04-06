@@ -10,9 +10,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-content: center;
+    align-content: left;
     text-align: justify;
-    text-align: center;
+    text-align: left;
     line-height: 40px;
     margin: 0;
     margin-bottom: 3rem;
