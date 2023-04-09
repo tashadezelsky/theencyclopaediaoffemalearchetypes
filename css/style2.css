@@ -182,7 +182,7 @@
     .header {  
         position: sticky;
         top: 0;
-        font-size: 8px;
+        font-size: 10px;
         height: 5vh;
         padding-top: 10px;
         background-color: #fff000;
