@@ -77,6 +77,7 @@
         a.blue {
             color: #FF00FF;
             text-decoration: none;
+            mix-blend-mode: multiply;
         }
 
         a.blue:hover {
@@ -197,7 +198,7 @@
         }
 
     #contentpink {
-            display: inline-block;
+            displilay: inline-block;
             min-height: 100vh;
             gap: 0px;
         }
