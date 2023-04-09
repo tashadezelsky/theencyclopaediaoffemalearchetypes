@@ -170,7 +170,7 @@
             mix-blend-mode: multiply;
         }
 
-   /*-- #contentpink {
+        /*-- #contentpink {
             position: absolute; 
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -185,52 +185,6 @@
             
     }
 
-    /* imgbgpink
-
-        img.motherbgpink {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        img.motherbgpink:hover {
-            background-color: #FF00FF;
-            mix-blend-mode: multiply;
-            cursor: pointer;
-        }
-
-        img.maidenbgpink {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        img.maidenbgpink:hover {
-            background-color: #FF00FF;
-            mix-blend-mode: multiply;
-        }
-
-        img.cronebgpink {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        img.cronebgpink:hover {
-            background-color: #FF00FF;
-            mix-blend-mode: multiply;
-        }
-
-        img.wildbgpink {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        img.wildbgpink:hover {
-            background-color: #FF00FF;
-            mix-blend-mode: multiply;
-        } --*/
 
 
 
