@@ -2,15 +2,6 @@ console.log('yo yo');
 
 console.log("please work");
 
-
-if (
-    localStorage.getItem("color-mode") === "blue" ||
-    (window.matchMedia("(prefers-color-scheme: blue)").matches &&
-      !localStorage.getItem("color-mode"))
-  ) {
-    document.documentElement.setAttribute("color-mode", "blue");
-  }
-
 /*-- this one changes picture colors
 
 function one() {
