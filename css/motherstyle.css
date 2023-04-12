@@ -538,9 +538,9 @@
 
         .imagewhole2 {
             display: grid;
-            margin-bottom: 0px;
-            min-height: 30vh;
-            padding-bottom: 40px;
+            margin-bottom: 50px;
+            min-height: 40vh;
+            padding-bottom: 0px;
         }
 
         .bodytxtblue1 {
@@ -551,14 +551,23 @@
             margin: 0;
         }
 
+        .imagewhole3 {
+            display: grid;
+            margin-bottom: 10px;
+            min-height: 70vh;
+        }
+    }
+
         .bodytxtblue3 {
             margin: 0;
         }
+
+
 
         .imagewhole4 {
             display: grid;
             margin-bottom: 0px;
             min-height: 90vh;
-            padding-bottom: 40px;
+            /*padding-bottom: 40px;*/
         }
     }
