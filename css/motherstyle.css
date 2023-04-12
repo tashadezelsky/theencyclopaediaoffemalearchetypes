@@ -155,6 +155,7 @@
         height: 150vh;
         display: flex;
         position: relative;
+        font-size: 16px;
     }
 
         .tabs_sidebar {
@@ -355,7 +356,7 @@
        grid-row-start: 3;
        grid-column-start: 2;
        color: var(--textpinkopacity);
-       margin-top: 280px;
+       margin-top:0 ;
     }
 
     p.bodytxtblue2 {
