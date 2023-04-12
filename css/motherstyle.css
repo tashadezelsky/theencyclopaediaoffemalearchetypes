@@ -147,6 +147,7 @@
 
         button.pink-mode-toggle {
             cursor: pointer;
+            font-weight: bold;
         }
 
      .tabscontainer {
@@ -156,6 +157,7 @@
         display: flex;
         /* position: relative; */
         font-size: 1em;
+        overflow: auto;
     }
 
         .tabs_sidebar {
@@ -233,12 +235,12 @@
         display: none;
         /*border: 2px solid red;*/
         margin-left: 250px;
-        padding: 20px 20px 20px 40px;
+        padding: 0px 20px 20px 40px;
         font-family: neuehaasroman;
         color: rgba(var(--textblue),1);
         /*background-color: var(--main-color);*/
         z-index: 1;
-        min-height: min-content;
+        overflow: auto;
     }
 
     .tabs_content--active {
@@ -252,13 +254,14 @@
         mix-blend-mode: multiply;
     }
 
-        h1.header {
+        h1.title {
             mix-blend-mode: multiply;
             background-color: transparent;
             font-size: 4rem;
             grid-column: span 3;
             padding: 5px 0px 0px 0px;
             margin: 0px;
+            font-family: neuehaas65;
         }
 
         h3.definitions {
@@ -269,21 +272,29 @@
             padding: 0px;
         }
 
+        p.def {
+            font-family: neuehaas65;
+            margin: 0;
+        }
+
+        li.def {
+            list-style: numbers;
+        }
+
     .imagewhole1 {
         display: grid;
         grid-template-rows: 90% 10%;
         margin-bottom: 0px;
         /* justify-content: space-between; */
         flex-direction: column;
-        grid-column-start: 1;
-        grid-row-start: 3;
-        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-row-start: 5;
     }
 
     .imagewhole2 {
         display: grid;
         grid-template-rows: 90% 10%;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
         flex-direction: column;
         grid-row-start: 3;
         grid-column-start: 3;
@@ -362,6 +373,15 @@
         margin: 0;
     }
 
+    p.bodytxtpink2 {
+        position: relative;
+        mix-blend-mode: multiply;
+        grid-row-start: 5;
+        grid-column-start: 3;
+        color: var(--textpinkopacity);
+        margin: 0;
+    }
+
     p.bodytxtblue2 {
         color: var(--textblueopacity);
         margin-top: 0;
@@ -381,15 +401,35 @@
         margin-top: 0;
     }
 
+    .imagewhole3 {
+        display: grid;
+        grid-template-rows: 90% 10%;
+        margin-bottom: 20px;
+        flex-direction: column;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 1;
+    }
 
-   /* img.test1 {
+    .footnotes {
+        position: relative;
+        grid-column: span 3;
+        grid-row-start: 8;
+        grid-row-end: 8;
+        font-family: orpheuspro;
+        font-size: 12px;
+
+    }
+
+    .footnotesblue {
         position: absolute;
-        width: 50%;
-        height: 100%;
-        object-fit: cover;
-        /*background-color: var(--imageblueopacity);
-        mix-blend-mode: normal;
-} */
+        display: inline-block;
+
+    }
+
+    li.footnotes {
+        list-style: numbers;
+    }
 
 
 
@@ -419,8 +459,6 @@
         }
 
         .tabscontainer {
-            max-width: 100vw;
-            min-height: 400vh;
             padding: 10px;
             display: flex;
             flex-direction: column;
@@ -449,7 +487,7 @@
             /* border: 2px solid red; */
             /* border-right: 3px solid rgba(var(--textblue),1); */
             display: none;
-                } 
+            } 
 
 
         button.tabs_button {
@@ -463,18 +501,16 @@
         .tabs_content {
             /*max-width: 100vw;*/
             margin-left: 0;
-            min-height: max-content;
         }
 
         .tabs_content--active {
             display: flex;
             flex-direction: column;
-            column: 2.5em auto auto auto;
+            columns: 2.5em auto auto auto;
             padding: 10px 20px 20px 10px;
-            min-height: auto;
         }
 
-        h1.header {
+        h1.title {
             font-size: 2.5em;
             padding: 10px 0px 0px 0px;
             line-height: 1;
@@ -487,7 +523,7 @@
         .imagewhole1 {
             display: grid;
             margin-bottom: 0px;
-            min-height: 80vh;
+            min-height: 70vh;
         }
 
         .imagebox{
@@ -513,8 +549,10 @@
             margin: 0;
         }
 
-        .bodytxtblue4 {
-            margin: 0;
+        .imagewhole3 {
+            display: grid;
+            margin-bottom: 0px;
+            min-height: 90vh;
+            padding-bottom: 40px;
         }
-
     }
