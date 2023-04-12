@@ -154,8 +154,8 @@
         background-color: var(--foreground); */
         height: 150vh;
         display: flex;
-        position: relative;
-        font-size: 16px;
+        /* position: relative; */
+        font-size: 1.1em;
     }
 
         .tabs_sidebar {
@@ -244,11 +244,12 @@
     .tabs_content--active {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: max-content max-content max-content 3rem;
-        grid-template-areas: "left right center" "header content1 content2 content3 footnotes";
+        grid-template-rows: 
+        max-content max-content max-content 
+        max-content max-content max-content 
+        max-content max-content max-content;
         grid-gap: 20px;
         mix-blend-mode: multiply;
-
     }
 
         h1.header {
@@ -270,11 +271,12 @@
 
     .imagewhole1 {
         display: grid;
-        grid-template-rows: 450px 30px;
-        margin-bottom: 20px;
+        grid-template-rows: 95% 10%;
+        /* margin-bottom: 20px; */
         flex-direction: column;
         grid-column-start: 1;
         grid-row-start: 3;
+        grid-row-end: 5;
     }
 
     .imagewhole2 {
@@ -319,7 +321,8 @@
             .imagecaptions {
                 position: relative;
                 margin: 15px 0px 0px 0px;
-                font-size: 14px;
+                font-size: 0.8em;
+                height: max-content;
             }
 
             p.imgcaptionblue {
@@ -341,7 +344,6 @@
             }
 
     p.bodytxtblue1 {
-        position: relative;
         margin: 0;
         mix-blend-mode: multiply;
         grid-row-start: 3;
@@ -351,31 +353,30 @@
     }
 
     p.bodytxtpink1 {
-       position: relative;
-       mix-blend-mode: multiply;
-       grid-row-start: 3;
-       grid-column-start: 2;
-       color: var(--textpinkopacity);
-       margin-top:0 ;
+        position: relative;
+        mix-blend-mode: multiply;
+        grid-row-start: 4;
+        grid-column-start: 2;
+        color: var(--textpinkopacity);
+        margin-top: 0;
     }
 
     p.bodytxtblue2 {
-        position: relative;
+        justify-content: flex-start;
         color: var(--textblueopacity);
-        margin-top: 500px;
-        /*padding-top: 20px;*/
+        margin-top: auto;
+        /* padding-top: 20px; */
         mix-blend-mode: multiply;
-        grid-row-start: 3;
+        grid-row-start: 5;
         grid-column-start: 1;
-        grid-column-end: 2;
     }
 
     p.bodytxtblue3 {
         position: relative;
         color: var(--textblueopacity);
-        margin-top: 520px;
+        /* margin-top: 520px; */
         mix-blend-mode: multiply;
-        grid-row-start: 3;
+        grid-row-start: 4;
         grid-column-start: 3;
     }
 
