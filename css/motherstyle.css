@@ -281,7 +281,7 @@
 
     .imagewhole2 {
         display: grid;
-        grid-template-rows: 450px 30px;
+        grid-template-rows: 90% 10%;
         margin-bottom: 20px;
         flex-direction: column;
         grid-row-start: 3;
