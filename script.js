@@ -2,6 +2,16 @@ console.log('yo yo');
 
 console.log("please work");
 
+const targetDiv = document.getElementById("tabs_sidebar");
+    const btn2 = document.getElementById("hamburgermenubtn");
+    btn2.onclick = function () {
+      if (targetDiv.style.display !== "none") {
+        targetDiv.style.display = "none";
+      } else {
+        targetDiv.style.display = "block";
+      }
+    };
+
 const btn = document.getElementById('pink-mode-toggle');
 
 // ✅ Toggle button text on click
