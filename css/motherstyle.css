@@ -159,6 +159,7 @@
         background-color: var(--foreground); */
         height: max-content;
         display: flex;
+        mix-blend-mode: multiply;
         }
 
         p {
