@@ -159,7 +159,7 @@
         background-color: var(--foreground); */
         height: max-content;
         display: flex;
-        mix-blend-mode: multiply;
+        /*mix-blend-mode: multiply;*/
         }
 
         p {
@@ -537,7 +537,7 @@
             margin-left: 0;
             min-height: 100vh;
             min-width: 100vw;
-            display: none;
+           
         }
 
         .tabs_sidebar {
