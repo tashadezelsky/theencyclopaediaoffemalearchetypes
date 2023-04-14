@@ -170,6 +170,7 @@
             /*font-size: 1rem;*/
             mix-blend-mode: multiply;
             margin: 0px;
+            font-size: 1.1vw;
         }
 
         .imagebg {
@@ -249,9 +250,8 @@
                         }
 
                         button.tabs_button:hover {
-                            color: white; 
                             cursor: pointer;
-                            mix-blend-mode: screen;
+                            mix-blend-mode: multiply;
                     }
 
 
@@ -260,7 +260,7 @@
             .tabs_content {
                 display: none;
                 /*border: 2px solid red;*/
-                margin-left: 250px;
+                margin-left: 17.5vw;
                 padding: 20px 20px 0px 40px;
                 font-family: neuehaasroman;
                 color: rgba(var(--textblue),1);
@@ -789,7 +789,11 @@
             min-height: max-content;
             margin-bottom: 3vw;
             font-size: 1em;
-        }   
+        }  
+        
+        p {
+            font-size: 1em;
+        }
 
 
 
@@ -838,7 +842,7 @@
             max-height: 95vh;
             mix-blend-mode: normal;
             border-right: 0px solid rgba(var(--textblue),1);
-            opacity: 90%;
+            opacity: 100%;
             background-color: #fff000;
             } 
 
@@ -857,8 +861,8 @@
             justify-content: left;
             text-align: left;
             -webkit-text-stroke: black;
-            -webkit-text-stroke-width: 1px;
-            font-size: 2.7rem;
+            /*-webkit-text-stroke-width: 1px;*/
+            font-size: 2.6rem;
         }
 
         button.tabs_button:active {
@@ -872,9 +876,6 @@
             mix-blend-mode: normal;
         }
 
-        button.tabs_button:hover { 
-            color: none;
-        }
 
        /* .tabscontainer {
             padding-top: 10vh;
