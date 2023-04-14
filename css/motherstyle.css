@@ -761,6 +761,7 @@
 /*-- responsive edits --*/
 
   /* -- first iteration */
+
     @media (max-width: 900px) {
         
         .header {  
@@ -792,7 +793,7 @@
         }  
         
         p {
-            font-size: 1em;
+            font-size: 1.5em;
         }
 
 
@@ -814,7 +815,7 @@
             justify-content: flex-end;
             align-content: right;
             mix-blend-mode: multiply;
-            padding-left: 73%;
+            /*padding-left: 73%;*/
             z-index: 3;
             margin-top: 79vh;
           }
@@ -825,6 +826,7 @@
             height: 80px;
             width: 80px;
             padding: 10px;
+            margin-left: 88vw;
             position: relative;
             background-color: rgba(var(--textblue),1);
           }
@@ -838,6 +840,7 @@
             padding-top: 0px;
             padding-top: 20px;
             max-width: 100vw;
+            min-width: 100vw;
             min-height: 95vh;
             max-height: 95vh;
             mix-blend-mode: normal;
@@ -936,7 +939,7 @@
             display: grid;
             margin-bottom: 30px;
             margin-top: 10px;
-            min-height: 60vh;
+            min-height: 120vw;
         }
 
         .imagebox{
@@ -946,7 +949,7 @@
         .imagewhole2 {
             display: grid;
             margin-bottom: 60px;
-            min-height: 40vh;
+            min-height: 70vw;
             padding-bottom: 0px;
         }
 
@@ -965,7 +968,7 @@
         .imagewhole3 {
             display: grid;
             margin-bottom: 20px;
-            min-height: 70vh;
+            min-height: 130vw;
         }
 
         .bodytxtblue3 {
@@ -975,19 +978,19 @@
         .imagewhole4 {
             display: grid;
             margin-bottom: 10px;
-            min-height: 90vh;
+            min-height: 170vw;
             /*padding-bottom: 40px;*/
         }
 
         .imagewhole5 {
-            min-height: 40vh;
+            min-height: 70vw;
             margin-bottom: 30px;
             margin-top: 10px;
 
         }
 
         .imagewhole6 {
-            min-height: 40vh;
+            min-height: 70vw;
             margin-bottom: 20px;
             margin-top: 20px;
 
@@ -998,14 +1001,14 @@
         }
 
         .imagewhole7 {
-            min-height: 80vh;
+            min-height: 150vw;
             margin-bottom: 20px;
             margin-top: 20px;
 
         }
 
         .imagewhole8 {
-            min-height: 70vh;
+            min-height: 140vw;
             margin-bottom: 20px;
             margin-top: 20px;
 
@@ -1016,7 +1019,7 @@
         }
 
         .imagewhole9 {
-            min-height: 70vh;
+            min-height: 150vw;
             margin-bottom: 20px;
             margin-top: 20px;
 
@@ -1026,4 +1029,22 @@
             margin-top: 20px;
             margin-bottom: 20px;
         }
+    }
+
+    @media (max-width: 600px) {
+
+        p {
+            font-size: 1em;
+        }
+
+        button#hamburgermenubtn {
+            display: block; 
+            border: none;
+            height: 80px;
+            width: 80px;
+            padding: 10px;
+            margin-left: 73vw;
+            position: relative;
+            background-color: rgba(var(--textblue),1);
+          }
     }
