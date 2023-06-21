@@ -628,53 +628,64 @@
                                 color: #fff000;
                             }
 
-                            /*-- matriarch--*/
+                            /*-- maddonna whore--*/
 
                             .imagewhole10 {
                                 display: grid;
                                 grid-template-rows: 90% 10%;
                                 margin-bottom: 0px;
                                 flex-direction: column;
-                                grid-column-start: 3;
+                                grid-column-start: 1;
                                 grid-row-start: 3;
                                 grid-row-end: 5;
                             }
 
-                            .bodytxtblue8 {
+                            .bodytxtblue8a {
                                 color: var(--textblueopacity);
                                 grid-row-start: 3;
                                 grid-row-end: 4;
-                                grid-column-start: 1;
+                                grid-column-start: 2;
+                                margin-top: 0px;
+                            }
+
+                            .bodytxtblue8a .pullquotesblue {
+                                background: var(--pullquotesblueopacity);
+                                color: #fff000;
+                            }
+
+                            .bodytxtblue8 {
+                                color: var(--textblueopacity);
+                                grid-row-start: 4;
+                                grid-row-end: 5;
+                                grid-column-start: 2;
                                 margin-bottom: 0.1vw;
                             }
 
                             .imagewhole11 {
                                 display: grid;
                                 grid-template-rows: 90% 10%;
-                                margin-bottom: 0px;
+                                margin-top: 21vw;
                                 flex-direction: column;
                                 grid-column-start: 2;
-                                grid-row-start: 3;
-                                grid-row-end: 4;
+                                grid-row-start: 4;
+                                grid-row-end: 6;
                             }
 
 
                             .bodytxtpink6 {
                                 color: var(--textpinkopacity);
-                                grid-row-start: 4;
+                                grid-row-start: 3;
                                 grid-row-end: 5;
-                                grid-column-start: 2;
-                                margin-top: 1.7vw;
+                                grid-column-start: 3;
                             }
 
                             .imagewhole12 {
                                 display: grid;
                                 grid-template-rows: 90% 10%;
-                                margin-bottom: 0px;
                                 flex-direction: column;
-                                grid-column-start: 2;
-                                grid-row-start: 5;
-                                grid-row-end: 6;
+                                grid-column-start: 1;
+                                grid-row-start: 6;
+                                grid-row-end: 7;
                             }
 
                             .bodytxtblue9 {
@@ -682,62 +693,59 @@
                                 grid-row-start: 5;
                                 grid-row-end: 6;
                                 grid-column-start: 1;
-                                margin-top: 0px;
+                                margin-top: 1vw;
                             }
+
+                            .bodytxtblue9a {
+                                color: var(--textblueopacity);
+                                grid-row-start: 5;
+                                grid-row-end: 6;
+                                grid-column-start: 3;
+                                margin-top: 1vw;
+                            }
+
 
                             .imagewhole13 {
                                 display: grid;
                                 grid-template-rows: 90% 10%;
                                 flex-direction: column;
-                                grid-column-start: 1;
-                                grid-row-start: 4;
-                                grid-row-end: 5;
-                            }
-
-                            .bodytxtblue10 {
-                                color: var(--textblueopacity);
-                                grid-row-start: 4;
-                                grid-column-start: 2;
-                                margin-top: 25vw;
-                                margin-bottom: 1vw;
-                            }
-
-                            .bodytxtblue10 .pullquotesblue {
-                                background: var(--pullquotesblueopacity);
-                                color: #fff000;
+                                grid-column-start: 3;
+                                grid-row-start: 5;
+                                grid-row-end: 7;
+                                margin-top: 14vw;
+                                margin-bottom: 33vw;
                             }
 
                             .bodytxtpink7 {
                                 color: var(--textpinkopacity);
-                                grid-row-start: 5;
+                                grid-row-start: 6;
                                 grid-row-end: 7;
-                                grid-column-start: 3;
-                                margin-top: 0px;
-                            }
-
-                            .imagewhole14 {
-                                display: grid;
-                                grid-template-rows: 90% 10%;
-                                margin-bottom: 0px;
-                                margin-top: 31vw;
-                                flex-direction: column;
-                                grid-column-start: 1;
-                                grid-row-start: 5;
-                                grid-row-end: 7;
+                                grid-column-start: 2;
+                                margin-top: 1vw;
                             }
 
                             .bodytxtpink8 {
                                 color: var(--textpinkopacity);
-                                grid-row-start: 6;
-                                grid-row-end: 7;
-                                grid-column-start: 2;
-                                margin-top: 1.8vw;
+                                grid-row-start: 4;
+                                grid-row-end: 5;
+                                grid-column-start: 3;
+                                margin-top: 11vw;
                             }
 
                             .bodytxtpink8 .pullquotespink {
                                 background: var(--pullquotespinkopacity);
                                 color: #fff000;
                             }
+
+                            .bodytxtblue10 {
+                                color: var(--textblueopacity);
+                                grid-row-start: 6;
+                                grid-column-start: 3;
+                                margin-top: 16vw;
+                                margin-bottom: 1vw;
+                            }
+
+                    
 
                             /*-- stepmother --*/
 
