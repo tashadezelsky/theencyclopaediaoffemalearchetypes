@@ -8,7 +8,7 @@
     --pink: 255,0,255;
     --trans: 255, 255, 255;
     --alpha: 1;
-    --beta: 0.2;
+    --beta: 0.1;
 
     --foreground: var(--blue);
     --background: var(--pink);
@@ -36,7 +36,7 @@
     --blue: 0, 159, 227;
     --trans: 255, 255, 255;
     --alpha: 1;
-    --beta: 0.2;
+    --beta: 0.1;
 
     --foreground: var(--pink);
     --background: var(--blue);
@@ -1184,61 +1184,56 @@
                 margin-bottom: 0px;
             }
 
-        /*-- artist --*/
+        /*-- bookworm --*/
 
 
         .imagewhole1 {
             display: grid;
-            margin-bottom: 12vw;
-            margin-top: 5vw;
-            min-height: 70vw;
-        }
-
-        .imagebox{
-            height: 80%;
+            margin: 5vw 0vw 3vw 0vw;
+            min-height: 140vw;
         }
 
         .imagewhole2 {
             display: grid;
-            margin-top: 7vw;
-            min-height: 150vw;
+            margin: 9vw 0vw 9vw 0vw;
+            min-height: 120vw;
         }
 
         .bodytxtpink1 {
-            margin-bottom: 5vw;
+            margin-bottom: 6vw;
         }
 
         .imagewhole3 {
-            margin-bottom: 7vw;
-            margin-top: 5vw;
-            min-height: 70vw;
+            margin: 5vw 0vw 6vw 0vw;
+            min-height: 60vw;
         }
 
         .imagewhole4 {
             display: grid;
-            margin-bottom: 12vw;
-            margin-top: 6vw;
-            min-height: 80vw;
+            margin: 6vw 0vw 2vw 0vw;
+            min-height: 220vw;
         }
 
         .bodytxtpink2 {
-            mix-blend-mode: multiply;
-            margin-bottom: 5vw;
+            margin-bottom: 7vw;
+        }
+
+        .bodytxtpink3a {
+            margin-bottom: 3vw;
+        }
+
+        .bodytxtblue3 {
+            margin-bottom: 6vw;
 
         }
 
-        .imagewhole4a {
-            min-height: 130vw;
-            margin-bottom: 10vw;
-        }
 
 
-
-        /*--beauty--*/
+        /*--enchantress--*/
 
         .imagewhole5 {
-            min-height: 200vw;
-            margin-top: 4vw;
+            min-height: 150vw;
+            margin: 5vw 0vw 4vw 0vw;
 
         }
 
@@ -1247,9 +1242,8 @@
         }
 
         .imagewhole6 {
-            min-height: 70vw;
-            margin-bottom: 5vw;
-            margin-top: 8vw;
+            min-height: 130vw;
+            margin: 7vw 0vw 0vw 0vw;
 
         }
 
@@ -1258,10 +1252,13 @@
         }
 
         .imagewhole7 {
-            min-height: 70vw;
-            margin-bottom: 10vw;
-            margin-top: 8vw;
+            min-height: 130vw;
+            margin: 8vw 0vw 0vw 0vw;
 
+        }
+
+        .bodytxtblue4a {
+            margin: 9vw 0vw 5vw 0vw;
         }
 
         .bodytxtblue5 {
@@ -1269,10 +1266,8 @@
         }
 
         .imagewhole8 {
-            min-height: 120vw;
-            margin-bottom: 4vw;
-            margin-top: 8vw;
-
+            min-height: 50vw;
+            margin: 8vw 0vw 14vw 0vw;
         }
 
         .bodytxtpink5 {
@@ -1281,44 +1276,41 @@
         }
 
 
-        /*--madonna--*/
+        /*--oracle--*/
 
         .imagewhole10 {
-            min-height: 140vw;
-            margin-top: 7vw;
-            margin-bottom: 11vw;
+            min-height: 210vw;
+            margin: 7vw 0vw 0vw 0vw;
 
         }
 
-        .bodytxtblue8a {
-            margin-bottom: 6vw;
+        .bodytxtblue8 {
+            margin: -1vw 0vw 6vw 0vw;
         }
 
         .imagewhole11 {
-            min-height: 70vw;
-            margin-top: 7vw;
-            margin-bottom: 11vw;
+            min-height: 130vw;
+            margin: 9vw 0vw 6vw 0vw;
 
         }
 
         .bodytxtpink6 {
-            margin-bottom: 8vw;
+            margin: 0vw 0vw 9vw 0vw;
         }
 
         .imagewhole12 {
-            min-height: 150vw;
-            margin-bottom: 7vw;
+            min-height: 50vw;
+            margin: 0vw 0vw 14vw 0vw;
 
         }
 
-        .bodytxtblue9a {
-            margin-top: 4vw;
+        .bodytxtblue10 {
+            margin-top: 10vw 0vw 0vw 0vw;
         }
 
         .imagewhole13 {
-            min-height: 65vw;
-            margin-top: 8vw;
-            margin-bottom: 11vw;
+            min-height: 140vw;
+            margin: 10vw 0vw 5vw 0vw;
 
         }
 
@@ -1327,72 +1319,67 @@
         }
 
         .bodytxtpink8 {
-            margin-top: 6vw;
+            margin: 6vw 0vw 5vw 0vw;
         }
 
-        .bodytxtblue10 {
-            margin-top: 7vw;
-            margin-bottom: 5vw;
-        }
-
-        /*-- princess --*/
+        /*-- shrew --*/
 
         .imagewhole15 {
-            min-height: 140vw;
-            margin-top: 5vw;
-            margin-bottom: 4vw;
+            min-height: 130vw;
+            margin: 5vw 0vw 6vw 0vw;
+        }
+
+        .bodytxtblue11 {
+            margin: 0vw 0vw 8vw 0vw;
         }
 
         .imagewhole16 {
-            min-height: 250vw;
-            margin-top: 4vw;
-            margin-bottom: -7vw;
+            min-height: 100vw;
+            
         }
 
         .bodytxtpink9 {
-            margin-top: 1vw;
-            margin-bottom: 7vw;
+            margin: 9vw 0vw 7vw 0vw;
         }
 
         .imagewhole17 {
             min-height: 60vw;
-            margin-top: 9vw;
-            margin-bottom: 7vw;
+            margin: 9vw 0vw 12vw 0vw;
         }
 
         .imagewhole18 {
-            min-height: 120vw;
-            margin-top: 7vw;
+            min-height: 130vw;
+            margin: 8vw 0vw 1vw 0vw;
         }
 
         .bodytxtpink10 {
             margin-top: 7vw;
-            margin-bottom: 0vw;
+            margin-bottom: 5vw;
         }
 
-        .imagewhole19 {
-            min-height: 60vw;
-            margin-bottom: 10vw;
-            margin-top: 8vw;
-        }
-
-        /*-- sad girl --*/
+        /*-- wise old --*/
 
         .imagewhole20 {
-            margin-top: 5vw;
-            margin-bottom: 9vw;
-            min-height: 80vw;
+            margin: 6vw 0vw 8vw 0vw;
+            min-height: 120vw;
         }
 
         .imagewhole21 {
-            min-height: 260vw;
-            margin-top: 6vw;
-            margin-bottom: -6vw;
+            min-height: 60vw;
+            margin: 7vw 0vw 10vw 0vw;
         }
 
         .imagewhole22 {
-            min-height: 60vw;
-            margin: 7vw 0vw 25vw 0vw;
+            min-height: 150vw;
+            margin: 9vw 0vw 14vw 0vw;
+        }
+
+        .bodytxtblue15 {
+            margin-top: 0vw;
+        }
+
+        .bodytxtblue16 {
+            margin: 6vw 0vw 2vw 0vw;
         }
 
         .imagewhole23 {
@@ -1400,47 +1387,49 @@
             margin: 6vw 0vw 13vw 0vw;
         }
 
-        .bodytxtblue16 {
-            margin: 6vw 0vw 8vw 0vw;
-        }
-
         .bodytxtpink13 {
-            margin: 0vw 0vw 5vw 0vw;
+            margin: 7vw 0vw 5vw 0vw;
         }
 
-        /*-- selfish girl --*/
+        /*-- witch --*/
 
         .imagewhole25 {
-            min-height: 70vw;
-            margin: 6vw 0vw 13vw 0vw;
+            min-height: 150vw;
+            margin: 6vw 0vw 6vw 0vw;
         }
 
         .imagewhole26 {
-            min-height: 70vw;
-            margin: 6vw 0vw 13vw 0vw; 
+            min-height: 160vw;
+            margin: 9vw 0vw 4vw 0vw; 
         }
 
+        .imagewhole27 {
+            min-height: 60vw;
+            margin: 8vw 0vw 13vw 0vw;
+        }
+
+
         .bodytxtblue18 {
-            margin: 0vw 0vw 7vw 0vw; 
+            margin: 1vw 0vw 0vw 0vw; 
         }
 
         .bodytxtblue19 {
             margin: 7vw 0vw 7vw 0vw; 
         }
 
-        .imagewhole27 {
-            min-height: 160vw;
-            margin: 0vw 0vw 5vw 0vw;
-        }
 
         .imagewhole28 {
-            min-height: 60vw;
-            margin: 0vw 0vw 0vw 0vw;
+            min-height: 70vw;
+            margin: 3vw 0vw 18vw 0vw;
         }
 
         .bodytxtpink16 {
-            margin: 7vw 0vw 6vw 0vw;
-            mix-blend-mode: multiply;
+            margin: 7vw 0vw 0vw 0vw;
+        }
+
+        .imagewhole29 {
+            min-height: 140vw;
+            margin: 8vw 0vw 5vw 0vw;
         }
 
         
