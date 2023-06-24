@@ -941,8 +941,8 @@
 
         .imagebg {
             margin-left: 0;
-            min-height: 100vh;
-            min-width: 100vw;
+            min-height: 0vh;
+            min-width: 0vw;
            
         }
 
@@ -1077,28 +1077,30 @@
                 margin-bottom: 0px;
             }
 
+
+        /*--femme fatale--*/
+
         .imagewhole1 {
             display: grid;
             margin-bottom: 6vw;
             margin-top: 5vw;
-            min-height: 120vw;
-        }
-
-        .imagebox{
-            height: 80%;
+            min-height: 140vw;
         }
 
         .imagewhole2 {
             display: grid;
-            margin-top: 6vw;
-            margin-bottom: 16vw;
-            min-height: 70vw;
+            margin: 7vw 0vw 6vw 0vw;
+            min-height: 150vw;
         }
 
         .imagewhole3 {
             display: grid;
-            margin-bottom: 6vw;
-            min-height: 130vw;
+            margin: 7vw 0vw 13vw 0vw;
+            min-height: 70vw;
+        }
+
+        .bodytxtblue3 {
+            margin-top: 0vw;
         }
 
         .bodytxtpink1 {
@@ -1107,18 +1109,29 @@
 
         .imagewhole4 {
             display: grid;
-            margin-bottom: 2vw;
-            margin-top: 6vw;
-            min-height: 170vw;
+            margin: 8vw 0vw 1vw 0vw;
+            min-height: 50vw;
             /*padding-bottom: 40px;*/
         }
 
-        /*--imperfect--*/
+        .bodytxtpink2 {
+            margin: 13vw 0vw 0vw 0vw;
+        }
+
+        .bodytxtpink3 {
+            margin: 6vw 0vw 3vw 0vw;
+        }
+
+        .imagewhole3a {
+            min-height: 70vw;
+            margin: 5vw 0vw 9vw 0vw;
+        }
+
+        /*--monster--*/
 
         .imagewhole5 {
-            min-height: 70vw;
-            margin-bottom: 12vw;
-            margin-top: 4vw;
+            min-height: 60vw;
+            margin: 5vw 0vw 13vw 0vw;
 
         }
 
@@ -1130,7 +1143,7 @@
         }
 
         .bodytxtblue5 {
-            margin-top: 0px;
+            margin: 0vw 0vw 7vw 0vw;
         }
 
         .imagewhole7 {
@@ -1141,55 +1154,49 @@
         }
 
         .imagewhole8 {
-            min-height: 140vw;
-            margin-bottom: 6vw;
-            margin-top: 8vw;
+            min-height: 160vw;
+            margin: 7vw 0vw 0vw 0vw;
 
         }
 
         .bodytxtblue6 {
-            margin-top: 6vw;
+            margin-top: 5vw;
         }
 
         .imagewhole9 {
-            min-height: 150vw;
-            margin-bottom: 5vw;
-            margin-top: 7vw;
+            min-height: 80vw;
+            margin: 7vw 0vw 13vw 0vw;
 
         }
 
-        .bodytxtpink5 {
-            margin-top: 7vw;
-            margin-bottom: 5vw;
+        .bodytxtpink5a {
+            margin: 1vw 0vw 0vw 0vw;
         }
 
-        .imagewhole10 {
-            min-height: 180vw;
-            margin-top: 5vw;
-            margin-bottom: 2vw;
+        .imagewhole9a {
+            min-height: 100vw;
+            margin: 9vw 0vw 9vw 0vw;
 
         }
 
         /*--matriarch--*/
 
-        .imagewhole11 {
-            min-height: 60vw;
+        .imagewhole10 {
+            min-height: 100vw;
             margin-top: 7vw;
             margin-bottom: 11vw;
+
+        }
+
+        .imagewhole11 {
+            min-height: 80vw;
+            margin: 8vw 0vw 11vw 0vw;
 
         }
 
         .imagewhole12 {
-            min-height: 110vw;
-            margin-top: 7vw;
-            margin-bottom: 11vw;
-
-        }
-
-        .imagewhole13 {
             min-height: 150vw;
-            margin-top: 7vw;
-            margin-bottom: 1vw;
+            margin: 9vw 0vw 5vw 0vw;
 
         }
 
@@ -1198,60 +1205,69 @@
             margin-bottom: 7vw;
         }
 
-        .imagewhole14 {
-            min-height: 56vw;
-            margin-top: 8vw;
-            margin-bottom: 11vw;
+        .imagewhole13 {
+            min-height: 60vw;
+            margin: 9vw 0vw 5vw 0vw;
 
         }
 
+        .imagewhole14 {
+            min-height: 100vw;
+            margin-bottom: 9vw;
+
+        }
+
+        .bodytxtpink7 {
+            margin: 2vw 0vw 3vw 0vw;
+        }
+        
         .bodytxtpink8 {
             margin-top: 4vw;
             margin-bottom: 6vw;
         }
 
-        .imagewhole15 {
+        .imagewhole14a {
             min-height: 70vw;
-            margin-top: 3vw;
-            margin-bottom: 17vw;
+            margin: 8vw 0vw 10vw 0vw;
+
+        }
+
+        /*--warrior--*/
+
+        .imagewhole15 {
+            min-height: 90vw;
+            margin: 6vw 0vw 11vw 0vw;
 
         }
 
         .imagewhole16 {
             min-height: 70vw;
-            margin-top: 6vw;
-            margin-bottom: 9vw;
-
-        }
-
-        .bodytxtpink9 {
-            margin-top: 2vw;
-            margin-bottom: 6vw;
+            margin: 8vw 0vw 7vw 0vw;
         }
 
         .imagewhole17 {
-            min-height: 70vw;
-            margin-top: 7vw;
-            margin-bottom: 14vw;
+            min-height: 150vw;
+            margin: 8vw 0vw 7vw 0vw;
 
         }
 
-        .bodytxtblue14 {
-            margin-top: 5vw;
-            margin-bottom: 0vw;
+        .bodytxtblue13 {
+            margin: 7vw 0vw 8vw 0vw;
         }
 
         .imagewhole18 {
-            min-height: 70vw;
-            margin-top: 7vw;
-            margin-bottom: 11vw;
+            min-height: 80vw;
+            margin: 0vw 0vw 0vw 0vw;
 
         }
 
+        .bodytxtpink10 {
+            margin: 17vw 0vw 6vw 0vw;
+        }
+
         .imagewhole19 {
-            min-height: 170vw;
-            margin-top: 7vw;
-            margin-bottom: 2vw;
+            min-height: 160vw;
+            margin: 7vw 0vw 0vw 0vw;
 
         }
 
