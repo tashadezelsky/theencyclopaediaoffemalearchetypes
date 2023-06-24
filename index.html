@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="images//favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <script src="scriptindex.js" defer></script>
 </head>
 
 <body>
@@ -17,35 +17,43 @@
 <!--first iteration-->
     <div class="wrapper">
         
-        <div class="header">
+        <!--<div class="header">
                     <a class="home" href="index.html"><p>The Encyclopaedia of Female Archetypes</p></a>
-                    <!--<button class="past" onclick="one(); two()">-->
-                    <a class="pink" href="developing.html"><p>Foundational</p></a>
-        </div>
+                    <button class="past" onclick="one(); two()">-->
+                    <!--<a class="pink" href="developing.html"><p>Foundational</p></a>
+        </div>-->
+
+        <div class="header">
+            <a href="index.html" class="homebtn">The Encyclopaedia of Female Archetypes</a>
+            <button id="pink-mode-toggle"
+                class="pink-mode-toggle" 
+                aria-label="toggle pink mode">
+                    Foundational
+            </button></div>
 
         <div id="contentblue">
                 
-                <div class="motherblue">  
-                    <a href="mother.html">
-                        <image class="motherbgblue" src="images//motherbg.png">
+                <div class="mother">  
+                    <a class= "imglink" href="mother.html">
+                        <image class="motherbg" img src="images/motherbg.png">    
                     </a>
                 </div>
                 
-                <div class="maidenblue">
-                    <a href="maiden.html">
-                        <image class="maidenbgblue" src="images//maidenbg.png">
+                <div class="maiden">
+                    <a class= "imglink" href="maiden.html">
+                        <image class="maidenbg" src="images//maidenbg.png">
                     </a>
                 </div>
 
-                <div class="croneblue">
-                    <a href="crone.html">
-                        <image class="cronebgblue" src="images//cronebg.png">
+                <div class="crone">
+                    <a class= "imglink" href="crone.html">
+                        <image class="cronebg" src="images//cronebg.png">
                     </a>
                 </div>
 
-                <div class="wildblue">
-                    <a href="wild.html">
-                        <img class="wildbgblue" src="images//wildbg.png">
+                <div class="wild">
+                    <a class= "imglink" href="wild.html">
+                        <img class="wildbg" src="images//wildbg.png">
                     </a>
                 </div>
         </div>

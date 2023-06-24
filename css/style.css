@@ -1,5 +1,48 @@
 :root {
     --main-color: #fff000;
+    /*--blue: #009FE3;*/
+    --blue: 0, 159, 227;
+    --blueimg: 55,163,53;
+    --pink: 255,0,255;
+    --trans: 255, 255, 255;
+    --alpha: 1;
+    --beta: 0.1;
+
+    --foreground: var(--blue);
+    --background: var(--pink);
+
+    --foregroundblue: rgba(var(--pink));
+    --foregroundpink: rgba(var(--blue));
+
+    --textblue: var(--blue);
+    --textpink: var(--pink);
+
+    --textblueopacity: rgba(var(--blue), var(--alpha));
+    --textpinkopacity: rgba(var(--pink), var(--beta));
+
+}
+
+.pinkmode {
+    --main-color: #fff000;
+    /*--pink: #FF00FF;*/
+    --pink: 255,0,255;
+    --pinkimg: 252,0,71;
+    --blue: 0, 159, 227;
+    --trans: 255, 255, 255;
+    --alpha: 1;
+    --beta: 0.1;
+
+    --foreground: var(--pink);
+    --background: var(--blue);
+
+    --foregroundblue: rgba(var(--blue));
+    --foregroundpink: rgba(var(--pink));
+
+    --textblue: var(--pink);
+    --textpink: var(--blue);
+
+    --textblueopacity: rgba(var(--blue), var(--beta));
+    --textpinkopacity: rgba(var(--pink), var(--alpha));
 }
 
 
@@ -65,29 +108,38 @@
             height: 5vh;
             max-width: 100vw;
             font-family: neuehaas65;
-            padding-left: 15px;
-            padding-right: 15px;
-            padding-top: 5px;
-            padding-bottom: 5px;
+            padding: 5px 15px 5px 15px;
             font-size: 0.8vw;
             background-color: transparent;
             mix-blend-mode: multiply;
         }
 
-        a.home {
-            color: #009FE3;
+        a.homebtn {
+            mix-blend-mode: multiply;
+            color: rgba(var(--textblue),1);
             text-decoration: none;
         }
 
-        a.pink {
-            color: #009FE3;
-            text-decoration: none;
+        /*--header button pink--*/
+        button.pink-mode-toggle {
+                background-color: transparent;
+                color: rgba(var(--textblue),1);
+                margin: none;
+                border: none;
+                mix-blend-mode: multiply;
+                padding: 0px;
+
         }
 
-        a.pink:hover {
-            color: #FF00FF;
+        button.pink-mode-toggle {
             cursor: pointer;
+            font-weight: bold;
         }
+
+        button.pink-mode-toggle:hover {
+            color: rgba(var(--textblueopacity));
+        }
+
 
 
         /* button {
@@ -128,49 +180,86 @@
     }
 
     /* imgbgblue --*/
-        img.motherbgblue {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+
+
+        a.imglink :hover {
+            padding: 0;
+            margin: 0;
+            mix-blend-mode: normal;
+            
         }
 
-        img.motherbgblue:hover {
-            background-color: #009FE3;
-            mix-blend-mode: multiply;
+
+        .mother {
+            mix-blend-mode: normal;
+            background-color: #fff000;
+
+        }
+
+        .mother :hover {
             cursor: pointer;
+            mix-blend-mode: multiply;
+            background-color: var(--foregroundpink);
         }
 
-        img.maidenbgblue {
+        img.motherbg {
             width: 100%;
-            height: 100%;
+            height: 99%;
             object-fit: cover;
         }
 
-        img.maidenbgblue:hover {
-            background-color: #009FE3;
-            mix-blend-mode: multiply;
+        .maiden {
+            mix-blend-mode: normal;
+            background-color: #fff000;
+
         }
 
-        img.cronebgblue {
+        .maiden :hover {
+            cursor: pointer;
+            mix-blend-mode: multiply;
+            background-color: var(--foregroundpink);
+        }
+
+        img.maidenbg {
             width: 100%;
-            height: 100%;
+            height: 99%;
             object-fit: cover;
         }
 
-        img.cronebgblue:hover {
-            background-color: #009FE3;
-            mix-blend-mode: multiply;
+        .crone {
+            mix-blend-mode: normal;
+            background-color: #fff000;
+
         }
 
-        img.wildbgblue {
+        .crone :hover {
+            cursor: pointer;
+            mix-blend-mode: multiply;
+            background-color: var(--foregroundpink);
+        }
+
+        img.cronebg {
             width: 100%;
-            height: 100%;
+            height: 99%;
             object-fit: cover;
         }
 
-        img.wildbgblue:hover {
-            background-color: #009FE3;
+        .wild {
+            mix-blend-mode: normal;
+            background-color: #fff000;
+
+        }
+
+        .wild :hover {
+            cursor: pointer;
             mix-blend-mode: multiply;
+            background-color: var(--foregroundpink);
+        }
+
+        img.wildbg {
+            width: 100%;
+            height: 99%;
+            object-fit: cover;
         }
 
 
