@@ -76,7 +76,7 @@ p {
     font-family: neuehaas75;
     padding: 8px;
     grid-template-columns: 1fr 1fr;
-    font-size: 14px;
+    font-size: 0.8vw;
     color: #FF00FF;
     background-color: #fff000;
     z-index: 2;
