@@ -292,7 +292,9 @@
 /*-- responsive edits --*/
 
    /*-- first iteration --*/
-    @media (max-width: 900px){
+    @media (max-width: 900px) {
+
+        
         
         .header {  
         position: sticky;

@@ -963,6 +963,10 @@
   /* -- first iteration */
 
     @media (max-width: 900px) {
+
+        .wrapper {
+            margin: 0vw 0vw 2vw 0vw
+        }
         
         .header {  
         position: sticky;

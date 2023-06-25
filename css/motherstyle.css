@@ -932,6 +932,10 @@
   /* -- first iteration */
 
     @media (max-width: 900px) {
+
+        .wrapper {
+            margin: 0vw 0vw 2vw 0vw
+        }
         
         .header {  
         position: sticky;
@@ -1281,7 +1285,7 @@
         .imagewhole18 {
             min-height: 70vw;
             margin-top: 7vw;
-            margin-bottom: 11vw;
+            margin-bottom: 15vw;
 
         }
 
