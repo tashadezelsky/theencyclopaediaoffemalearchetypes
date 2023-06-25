@@ -46,19 +46,38 @@
 }
 
 
-@font-face {
+/*@font-face {
     font-family: neuehaasroman;
-    src: url(neuehaasroman.ttf);
+    src: url(fonts/neuehaasroman.ttf);
 }
 
 @font-face {
     font-family: neuehaas65;
-    src: url(neuehaas65.ttf);
+    src: url(fonts/neuehaas65.ttf);
 }
 
 @font-face {
     font-family: neuehaas75;
-    src: url(neuehaas75.ttf);
+    src: url(fonts/neuehaas75.ttf);
+}*/
+
+
+@font-face {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 
@@ -107,9 +126,8 @@
             justify-content: space-between;
             height: 5vh;
             max-width: 100vw;
-            font-family: neuehaas65;
             padding: 5px 15px 5px 15px;
-            font-size: 0.8vw;
+            font-size: 0.9vw;
             background-color: transparent;
             mix-blend-mode: multiply;
         }
@@ -118,6 +136,8 @@
             mix-blend-mode: multiply;
             color: rgba(var(--textblue),1);
             text-decoration: none;
+            font-family: neue-haas-grotesk-display;
+            font-weight: 600;
         }
 
         /*--header button pink--*/
@@ -128,12 +148,13 @@
                 border: none;
                 mix-blend-mode: multiply;
                 padding: 0px;
+                font-family: neue-haas-grotesk-display;
+                font-weight: 600;
 
         }
 
         button.pink-mode-toggle {
             cursor: pointer;
-            font-weight: bold;
         }
 
         button.pink-mode-toggle:hover {

@@ -56,20 +56,60 @@
 }
 
 
-@font-face {
+//*-@font-face {
     font-family: neuehaasroman;
-    src: url(neuehaasroman.ttf);
+    src: url(fonts/neuehaasroman.ttf);
 }
 
 @font-face {
     font-family: neuehaas65;
-    src: url(neuehaas65.ttf);
+    src: url(fonts/neuehaas65.ttf);
 }
 
 @font-face {
     font-family: neuehaas75;
-    src: url(neuehaas75.ttf);
+    src: url(fonts/neuehaas75.ttf);
+}--*/
+
+/*-- neuehaas--*/
+
+@font-face {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/*--orpheus--*/
 
 @font-face {
     font-family: "orpheuspro", serif;
@@ -125,9 +165,10 @@
             top: 0;
             height: 5vh;
             max-width: 100vw;
-            font-family: neuehaas65;
+            font-family:  neue-haas-grotesk-display;
+            font-weight: 600;
             padding: 5px 15px 5px 15px;
-            font-size: 0.8vw;
+            font-size: 0.9vw;
             background-color: #fff000;
             /*mix-blend-mode: multiply;*/
             z-index: 3;
@@ -152,7 +193,7 @@
 
         button.pink-mode-toggle {
             cursor: pointer;
-            font-weight: bold;
+            font-weight: 600;
         }
 
         button.pink-mode-toggle:hover {
@@ -174,6 +215,7 @@
             mix-blend-mode: multiply;
             margin: 0px;
             font-size: 1.1vw;
+            font-family: neue-haas-grotesk-display;
         }
 
         .imagebg {
@@ -203,7 +245,6 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    font-family: neuehaas65;
                     font-size: 1em;
                     z-index: 2;
                     mix-blend-mode: multiply;
@@ -228,6 +269,8 @@
                         min-height: 60px;
                         max-height: 60px;
                         min-width: 100%;
+                        font-family: neue-haas-grotesk-display;
+                        font-weight: 600;
                         border: none;
                         mix-blend-mode: multiply;
 
@@ -246,7 +289,8 @@
                             background-color: transparent;
                             color: rgba(var(--textblue),1);
                             text-decoration: none;
-                            font-family: neuehaas75;
+                            font-family: neue-haas-grotesk-display;
+                            font-weight: 600;
                             mix-blend-mode: multiply;
                             border-bottom: 2px solid rgba(var(--textblue),1);
 
@@ -265,7 +309,8 @@
                 /*border: 2px solid red;*/
                 margin-left: 17.5vw;
                 padding: 20px 20px 0px 40px;
-                font-family: neuehaasroman;
+                font-family: neue-haas-grotesk-display;
+                font-weight: 500;
                 color: rgba(var(--textblue),1);
                 /*background-image: url("../images/maidebg2.png");*/
                 /*background-color: var(--main-color);*/
@@ -291,11 +336,12 @@
             h1.title {
                 mix-blend-mode: multiply;
                 background-color: transparent;
-                font-size: 4vw;
+                font-size: 4.5vw;
                 grid-column: span 3;
                 padding: 5px 0px 0px 0px;
                 margin: 0px;
-                font-family: neuehaas65;
+                font-family: neue-haas-grotesk-display;
+                font-weight: 700;
             }
 
             h3.definitions {
@@ -307,15 +353,30 @@
             }
 
             p.def {
-                font-family: neuehaas65;
+                font-family: neue-haas-grotesk-display;
+                font-weight: 600;
                 margin: 0;
-                font-size: 1.3vw;
+                font-size: 1.5vw;
             }
 
             ul.def {
-                list-style: numbers;
+                font-family: neue-haas-grotesk-display;
+                font-weight: 500;
                 margin-left: -20px;
                 font-size: 1.3vw;
+            }
+
+            p .n {
+                font-family: neue-haas-grotesk-display;
+                font-weight: 600;
+            }
+
+            .pullquotesblue {
+                line-height: 1.3em;
+            }
+
+            .pullquotespink {
+                line-height: 1.3em;
             }
 
             .imagebox {
@@ -325,10 +386,6 @@
                 object-fit: cover;
                 }
 
-            ul.bold {
-                font-family: neuehaas65;
-                font-size: 1.1vw;
-            }
 
                 /*--imgstest--*/
                     img.test1 {
@@ -485,6 +542,7 @@
                                     grid-row-start: 4;
                                     grid-row-end: 5;
                                     grid-column-start: 2;
+                                    margin-bottom: 0.5vw;
                                 }
 
                                 .bodytxtpink2 .pullquotespink {
@@ -604,7 +662,6 @@
                                 .imagewhole10 {
                                     display: grid;
                                     grid-template-rows: 90% 10%;
-                                    margin-bottom: 0px;
                                     flex-direction: column;
                                     grid-column-start: 1;
                                     grid-row-start: 3;
@@ -635,8 +692,10 @@
                                     grid-template-rows: 90% 10%;
                                     flex-direction: column;
                                     grid-column-start: 3;
-                                    grid-row-start: 5;
+                                    grid-row-start: 4;
                                     grid-row-end: 6;
+                                    margin-top: 9vw;
+                                    margin-bottom: 1vw;
                                 }
 
 
@@ -654,7 +713,7 @@
                                     grid-column-start: 1;
                                     grid-row-start: 6;
                                     grid-row-end: 7;
-                                    margin-bottom: 2.5vw;
+                                    margin-bottom: 2vw;
                                 }
 
                                 .bodytxtblue10 {
@@ -662,7 +721,6 @@
                                     grid-row-start: 6;
                                     grid-row-end: 8;
                                     grid-column-start: 3;
-                                    margin-top: 2vw;
                                 }
 
 
@@ -673,6 +731,7 @@
                                     grid-column-start: 2;
                                     grid-row-start: 6;
                                     grid-row-end: 8;
+                                    
                                 }
 
                                 .bodytxtpink7 {
@@ -768,7 +827,7 @@
                                         grid-column-start: 3;
                                         grid-row-start: 6;
                                         grid-row-end: 8;
-                                        margin-top: 1vw;
+                                        margin-top: 0.5vw;
                                     }
 
                                     .bodytxtpink10 {
@@ -806,7 +865,8 @@
                                     grid-column-start: 3;
                                     grid-row-start: 4;
                                     grid-row-end: 5;
-                                    margin-bottom: 20vw;
+                                    margin: -1vw 0vw 21vw 0vw;
+
                                 }
 
 
@@ -826,6 +886,7 @@
                                     grid-row-start: 4;
                                     grid-row-end: 5;
                                 }
+                                
 
 
                                 .bodytxtblue15 {
@@ -833,7 +894,7 @@
                                     grid-row-start: 4;
                                     grid-row-end: 5;
                                     grid-column-start: 3;
-                                    margin-top: 19vw;
+                                    margin-top: 17.5vw;
                                 }
 
                                 .bodytxtblue15 .pullquotesblue {
@@ -857,6 +918,7 @@
                                     grid-column-start: 3;
                                     grid-row-start: 5;
                                     grid-row-end: 6;
+                                    margin-top: 1vw;
                                     
                                 }
 
@@ -865,6 +927,7 @@
                                     grid-row-start: 5;
                                     grid-row-end: 7;
                                     grid-column-start: 1;
+                                    margin-top: -2vw;
                                 }
 
                                 .imagewhole24 {
@@ -883,7 +946,7 @@
                                     grid-row-start: 5;
                                     grid-row-end: 6;
                                     grid-column-start: 2;
-                                    margin-top: 2vw;
+                                    margin-top: 3vw;
                                 }
 
                                 .bodytxtpink13 .pullquotespink {
@@ -896,8 +959,6 @@
                                 .imagewhole25 {
                                     display: grid;
                                     grid-template-rows: 90% 10%;
-                                    margin-bottom: 0px;
-                                    margin-top: 0vw;
                                     flex-direction: column;
                                     grid-column-start: 1;
                                     grid-row-start: 3;
@@ -989,7 +1050,7 @@
                                     grid-column-start: 1;
                                     grid-row-start: 6;
                                     grid-row-end: 8;
-                                    margin-top: 13vw;
+                                    margin-top: 16vw;
 
                                 }
 
@@ -1011,180 +1072,186 @@
     @media (max-width: 900px) {
         
         .header {  
-        position: sticky;
-        top: 0;
-        font-size: 10px;
-        height: 5vh;
-        padding-top: 10px;
-        background-color: #fff000;
-        mix-blend-mode: normal;
-        }
-
-        a.home {
-            mix-blend-mode: multiply;
-        }
-
-        a.pink {
-            mix-blend-mode: multiply;
-        }
-
-        .tabscontainer {
-            /*position: relative;
-            justify-content: center;
-            display: flex;*/
-            flex-direction: column;
-            min-height: max-content;
-            margin-bottom: 3vw;
-            font-size: 1em;
-        }  
-        
-        p {
-            font-size: 1.5em;
-        }
-
-        p.def {
-            font-size: 1.1em;
-        }
-
-
-
-        .imagebg {
-            margin-left: 0;
-            min-height: 0vh;
-            min-width: 0vw;
-           
-        }
-
-        .hamburgermenu {
-            /*background-color: red;*/
-            display: flex;
-            flex-direction: column;
-            position: fixed;
-            max-width: 100vw;
-            min-height: max-content;
-            justify-content: flex-end;
-            align-content: right;
-            mix-blend-mode: multiply;
-            /*padding-left: 73%;*/
-            z-index: 3;
-            margin-top: 79vh;
-          }
-
-          button#hamburgermenubtn {
-            display: block; 
-            border: none;
-            height: 80px;
-            width: 80px;
-            padding: 10px;
-            margin-left: 88vw;
-            position: relative;
-            background-color: rgba(var(--textblue),1);
-          }
-
-        #tabs_sidebar {
-            display: flex;
-            /* display: grid; */
-            background-color: var(--main-color);
-            position: fixed;
-            padding-left: 0px;
-            padding-top: 0px;
-            padding-top: 20px;
-            max-width: 100vw;
-            min-width: 100vw;
-            min-height: 95vh;
-            max-height: 95vh;
-            mix-blend-mode: normal;
-            border-right: 0px solid rgba(var(--textblue),1);
-            opacity: 100%;
+            position: sticky;
+            top: 0;
+            font-size: 10px;
+            height: 5vh;
+            padding-top: 10px;
             background-color: #fff000;
-            } 
-
-            
-
-
-        button.tabs_button {
-            padding: 0px 20px 0px 20px;
-            margin-top: 0px;
-            width: 100%;
-            /*background-color: rgba(var(--textblue),1);*/
-            border: none; 
             mix-blend-mode: normal;
-            min-height: max-content;
-            max-height: max-content;
-            justify-content: left;
-            text-align: left;
-            -webkit-text-stroke: black;
-            /*-webkit-text-stroke-width: 1px;*/
-            font-size: 2.6em;
-        }
-
-        button.tabs_button:active {
-            margin: 2px;
-            padding: 0;
-            margin: 0;
-            /*mix-blend-mode: multiply;*/
-            mix-blend-mode: normal;
-            background-color: rgba(var(--textblue),1);
-            border-right: 2px solid rgba(var(--textblue),1);
-            mix-blend-mode: normal;
-        }
-
-
-       /* .tabscontainer {
-            padding-top: 10vh;
-        }*/
-
-        .tabs_content {
-            min-height: max-content;
-            margin: 5px 10px 10px 10px;
-            padding-bottom: 0;
-            mix-blend-mode:normal;
-            background-color: #fff000;
-        }
-
-        .tabs_content--active {
-            display: flex;
-            grid-gap: 0;
-            flex-direction: column;
-            columns: 2.5em auto auto auto;
-            padding: 10px 10px 0px 10px;
-        }
-
-        h1.title {
-            font-size: 2.5em;
-            padding: 10px 0px 0px 0px;
-            margin: 0vh 0vh 1vw 0vh;
-            line-height: 1;
-        }
-
-        h3.definitions {
-            margin: 0vh 0vh 2vh 0vh;
-        }
-
-        .footnotescontainer {
-            /*border: 2px solid red;*/
-            position: relative;
-            flex-wrap: wrap;
-            grid-column: 1;
-            grid-row-start: 8;
-            grid-row-end: 9;
-            font-family: orpheuspro;
-            font-size: 12px;
-            z-index: 0;
-            mix-blend-mode: multiply;
+            }
     
-        }
-
-        ul.def {
+            a.home {
+                mix-blend-mode: multiply;
+            }
+    
+            a.pink {
+                mix-blend-mode: multiply;
+            }
+    
+            .tabscontainer {
+                /*position: relative;
+                justify-content: center;
+                display: flex;*/
+                flex-direction: column;
+                min-height: max-content;
+                margin-bottom: 3vw;
+                font-size: 1em;
+            }  
+            
+            p {
+                font-size: 1.5em;
+            }
+    
+    
+    
+            .imagebg {
+                margin-left: 0;
+                min-height: 0vh;
+                min-width: 0vw;
+               
+            }
+    
+            .hamburgermenu {
+                /*background-color: red;*/
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                max-width: 100vw;
+                min-height: max-content;
+                justify-content: flex-end;
+                align-content: right;
+                mix-blend-mode: multiply;
+                /*padding-left: 73%;*/
+                z-index: 3;
+                margin-top: 79vh;
+              }
+    
+              button #hamburgermenubtn {
+                display: block; 
+                border: none;
+                height: 80px;
+                width: 80px;
+                padding: 10px;
+                margin-left: 88vw;
+                position: relative;
+                background-color: rgba(var(--textblue),1);
+              }
+    
+            #tabs_sidebar {
+                display: flex;
+                /* display: grid; */
+                background-color: var(--main-color);
+                position: fixed;
+                padding-left: 0px;
+                padding-top: 0px;
+                padding-top: 20px;
+                max-width: 100vw;
+                min-width: 100vw;
+                min-height: 95vh;
+                max-height: 95vh;
+                mix-blend-mode: normal;
+                border-right: 0px solid rgba(var(--textblue),1);
+                opacity: 100%;
+                background-color: #fff000;
+                } 
+    
+                
+    
+    
+            button.tabs_button {
+                padding: 0px 20px 0px 20px;
+                margin-top: 0px;
+                width: 100%;
+                /*background-color: rgba(var(--textblue),1);*/
+                border: none; 
+                mix-blend-mode: normal;
+                min-height: max-content;
+                max-height: max-content;
+                justify-content: left;
+                text-align: left;
+                -webkit-text-stroke: black;
+                /*-webkit-text-stroke-width: 1px;*/
+                font-size: 2.6em;
+            }
+    
+            button.tabs_button:active {
+                margin: 2px;
+                padding: 0;
+                margin: 0;
+                /*mix-blend-mode: multiply;*/
+                mix-blend-mode: normal;
+                background-color: rgba(var(--textblue),1);
+                border-right: 2px solid rgba(var(--textblue),1);
+                mix-blend-mode: normal;
+            }
+    
+    
+           /* .tabscontainer {
+                padding-top: 10vh;
+            }*/
+    
+            .tabs_content {
+                min-height: max-content;
+                margin: 5px 10px 10px 10px;
+                padding-bottom: 0;
+                mix-blend-mode:normal;
+                background-color: #fff000;
+            }
+    
+            .tabs_content--active {
+                display: flex;
+                grid-gap: 0;
+                flex-direction: column;
+                columns: 2.5em auto auto auto;
+                padding: 10px 10px 0px 10px;
+            }
+    
+            p.def {
+                font-size: 1.1em;
+            }
+    
+            p.n {
+                font-size: 4vw;
+    
+            }
+    
+            h1.title {
+                font-size: 3em;
+                padding: 10px 0px 0px 0px;
+                margin: 0vh 0vh 1vw 0vh;
+                line-height: 1;
+            }
+    
+            h3.definitions {
+                margin: 0vh 0vh 2vh 0vh;
+            }
+    
+            .footnotescontainer {
+                /*border: 2px solid red;*/
+                position: relative;
+                flex-wrap: wrap;
+                grid-column: 1;
+                grid-row-start: 8;
+                grid-row-end: 9;
+                font-family: orpheuspro;
+                font-size: 12px;
+                z-index: 0;
+                mix-blend-mode: multiply;
+        
+            }
+    
+            ul.def {
                 margin-bottom: -5px;
                 list-style: lower-roman;
-                font-size: 5vw;
+                font-size: 4.8vw;
             }
-
-        ul.footnotes {
-                list-style: lower-roman;
-                margin-bottom: 0px;
-            }
+    
+            ul.footnotes {
+                    list-style: lower-roman;
+                    margin-bottom: 0px;
+                }
+    
 
         /*-- bookworm --*/
 
