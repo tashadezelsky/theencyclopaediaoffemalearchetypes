@@ -166,7 +166,7 @@
 
         #content {
             border: 2px solid green; 
-            background-color: #009FE3; */
+            background-color: rgba(var(--textblue),1);
             display: grid;
             /*grid-template-columns: 1fr 1fr;
             grid-template-rows: 50% 50%;
