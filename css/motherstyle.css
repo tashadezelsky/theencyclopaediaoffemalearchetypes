@@ -58,12 +58,10 @@
     font-family: neuehaasroman;
     src: url(fonts/neuehaasroman.ttf);
 }
-
 @font-face {
     font-family: neuehaas65;
     src: url(fonts/neuehaas65.ttf);
 }
-
 @font-face {
     font-family: neuehaas75;
     src: url(fonts/neuehaas75.ttf);
@@ -430,31 +428,37 @@
         
                     .footnotescontainer {
                         /*border: 2px solid red;*/
-                        position: relative;
+                        /*position: relative;*/
                         flex-wrap: wrap;
                         grid-column: span 2;
                         grid-row-start: 8;
                         grid-row-end: 9;
                         font-family: orpheuspro;
                         font-size: 0.8vw;
+                        display: grid;
+                        grid-template-rows: max-content max-content;
 
                     }
 
                     .footnotesbluecontainer {
-                        position: absolute;
+                        /*position: absolute;*/
                         display: flex;
-                        flex-direction: column;
+                        /*flex-direction: column;*/
                         list-style: numbers;
                         color: var(--textblueopacity);
+                        grid-column: 1 / span 3;
+                        grid-row: 1 / span 1;
 
                     }
 
                     .footnotespinkcontainer {
-                        position: relative;
+                        /*position: relative;*/
                         display: flex;
-                        flex-direction: column;
+                        /*flex-direction: column;*/
                         list-style: numbers;
                         color: var(--textpinkopacity);
+                        grid-column: 1 / span 3;
+                        grid-row: 1 / span 1;
                     }
 
                     ul.footnotes {
@@ -464,7 +468,7 @@
 
                         /*--tab specific content --*/
 
-                            .imagewhole1 {
+                            .demeter-lucy {
                                 display: grid;
                                 grid-template-rows: 90% 10%;
                                 margin-bottom: 0px;
@@ -475,7 +479,7 @@
                             }
 
 
-                            .imagewhole2 {
+                            .demeter-kevin {
                                 display: grid;
                                 grid-template-rows: 90% 10%;
                                 margin-top: 35vw;
@@ -514,7 +518,7 @@
                                 color: #fff000;
                             }
 
-                            .imagewhole3 {
+                            .tsuru-beaver {
                                 display: grid;
                                 grid-template-rows: 90% 10%;
                                 margin-bottom: 0px;
@@ -534,7 +538,7 @@
                                 margin-top: 0;
                             }
 
-                            .imagewhole4 {
+                            .sita-goodwife {
                                 display: grid;
                                 grid-template-rows: 90% 10%;
                                 flex-direction: column;
@@ -573,7 +577,7 @@
 
                             /*-- imperfect mother --*/
 
-                            .imagewhole5 {
+                            .hera-roma {
                                 display: grid;
                                 grid-template-rows: 90% 10%;
                                 margin-bottom: 0px;
@@ -592,7 +596,7 @@
                                 margin-bottom: 0px;
                             }
 
-                            .imagewhole6 {
+                            .kraka-ladybird {
                                 display: grid;
                                 grid-template-rows: 90% 10%;
                                 margin-bottom: 0px;
@@ -609,7 +613,7 @@
                                 margin-top: 1.4vw;
                             }
 
-                            .imagewhole7 {
+                            .rosemary {
                                 display: grid;
                                 grid-template-rows: 90% 10%;
                                 margin-top: 1vw;
@@ -643,7 +647,7 @@
                                 color: #fff000;
                             }
 
-                            .imagewhole8 {
+                            .gilmore {
                                 display: grid;
                                 grid-template-rows: 90% 10%;
                                 margin-top: 12.5vw;
@@ -660,7 +664,7 @@
                                 margin-top: 0px;
                             }
 
-                            .imagewhole9 {
+                            .wu-umma {
                                 display: grid;
                                 grid-template-rows: 90% 10%;
                                 margin-bottom: 0px;
@@ -694,7 +698,7 @@
 
                             /*-- matriarch--*/
 
-                            .imagewhole10 {
+                            .gaea-titania {
                                 display: grid;
                                 grid-template-rows: 90% 10%;
                                 margin-bottom: 0px;
@@ -712,7 +716,7 @@
                                 margin-bottom: 0.1vw;
                             }
 
-                            .imagewhole11 {
+                            .bassett {
                                 display: grid;
                                 grid-template-rows: 90% 10%;
                                 margin-bottom: 0px;
@@ -731,7 +735,7 @@
                                 margin-top: 1.7vw;
                             }
 
-                            .imagewhole12 {
+                            .macha-alice {
                                 display: grid;
                                 grid-template-rows: 90% 10%;
                                 margin-bottom: 0px;
@@ -749,7 +753,7 @@
                                 margin-top: 0px;
                             }
 
-                            .imagewhole13 {
+                            .kali-vivian {
                                 display: grid;
                                 grid-template-rows: 90% 10%;
                                 flex-direction: column;
@@ -779,7 +783,7 @@
                                 margin-top: 0px;
                             }
 
-                            .imagewhole14 {
+                            .eboshi {
                                 display: grid;
                                 grid-template-rows: 90% 10%;
                                 margin-bottom: 0px;
@@ -805,7 +809,7 @@
 
                             /*-- stepmother --*/
 
-                            .imagewhole15 {
+                            .cinderella {
                                 display: grid;
                                 grid-template-rows: 90% 10%;
                                 margin-bottom: 0px;
@@ -824,7 +828,7 @@
                                 margin-bottom: 1vw;
                             }
 
-                            .imagewhole16 {
+                            .julia {
                                 display: grid;
                                 grid-template-rows: 90% 10%;
                                 margin-bottom: 0px;
@@ -853,7 +857,7 @@
                                 margin-top: 0vw;
                             }
 
-                            .imagewhole17 {
+                            .snow-white {
                                 display: grid;
                                 grid-template-rows: 90% 10%;
                                 margin-bottom: 17vw;
@@ -887,7 +891,7 @@
                                 margin-top: 28vw;
                             }
 
-                            .imagewhole18 {
+                            .stepmother-juno {
                                 display: grid;
                                 grid-template-rows: 90% 10%;
                                 margin-bottom: 0px;
@@ -907,7 +911,7 @@
                                 margin-top: 1vw;
                             }
 
-                            .imagewhole19 {
+                            .putana-kim {
                                 display: grid;
                                 grid-template-rows: 90% 10%;
                                 margin-bottom: 0px;
@@ -1118,7 +1122,9 @@
                 margin-bottom: 0px;
             }
 
-        .imagewhole1 {
+        /*--good wife--*/
+        
+        .demeter-lucy {
             display: grid;
             margin-bottom: 6vw;
             margin-top: 5vw;
@@ -1129,14 +1135,14 @@
             height: 80%;
         }
 
-        .imagewhole2 {
+        .demeter-kevin {
             display: grid;
             margin-top: 6vw;
             margin-bottom: 16vw;
             min-height: 70vw;
         }
 
-        .imagewhole3 {
+        .tsuru-beaver {
             display: grid;
             margin-bottom: 6vw;
             min-height: 130vw;
@@ -1146,7 +1152,7 @@
             margin-bottom: 5vw;
         }
 
-        .imagewhole4 {
+        .sita-goodwife {
             display: grid;
             margin-bottom: 2vw;
             margin-top: 6vw;
@@ -1156,14 +1162,14 @@
 
         /*--imperfect--*/
 
-        .imagewhole5 {
+        .hera-roma {
             min-height: 70vw;
             margin-bottom: 12vw;
             margin-top: 4vw;
 
         }
 
-        .imagewhole6 {
+        .kraka-ladybird {
             min-height: 70vw;
             margin-bottom: 12vw;
             margin-top: 8vw;
@@ -1174,14 +1180,14 @@
             margin-top: 0px;
         }
 
-        .imagewhole7 {
+        .rosemary {
             min-height: 150vw;
             margin-bottom: 6vw;
             margin-top: 8vw;
 
         }
 
-        .imagewhole8 {
+        .gilmore {
             min-height: 140vw;
             margin-bottom: 6vw;
             margin-top: 8vw;
@@ -1192,7 +1198,7 @@
             margin-top: 6vw;
         }
 
-        .imagewhole9 {
+        .wu-umma {
             min-height: 150vw;
             margin-bottom: 5vw;
             margin-top: 7vw;
@@ -1204,30 +1210,30 @@
             margin-bottom: 5vw;
         }
 
-        .imagewhole10 {
+        /*--matriarch--*/
+
+        .gaea-titania {
             min-height: 180vw;
             margin-top: 5vw;
             margin-bottom: 2vw;
 
         }
 
-        /*--matriarch--*/
-
-        .imagewhole11 {
+        .bassett {
             min-height: 60vw;
             margin-top: 7vw;
             margin-bottom: 11vw;
 
         }
 
-        .imagewhole12 {
+        .macha-alice {
             min-height: 110vw;
             margin-top: 7vw;
             margin-bottom: 11vw;
 
         }
 
-        .imagewhole13 {
+        .kali-vivian {
             min-height: 150vw;
             margin-top: 7vw;
             margin-bottom: 1vw;
@@ -1239,7 +1245,7 @@
             margin-bottom: 7vw;
         }
 
-        .imagewhole14 {
+        .eboshi {
             min-height: 56vw;
             margin-top: 8vw;
             margin-bottom: 11vw;
@@ -1251,14 +1257,16 @@
             margin-bottom: 6vw;
         }
 
-        .imagewhole15 {
+        /*--stepmother--*/
+
+        .cinderella {
             min-height: 70vw;
             margin-top: 3vw;
             margin-bottom: 17vw;
 
         }
 
-        .imagewhole16 {
+        .julia {
             min-height: 70vw;
             margin-top: 6vw;
             margin-bottom: 9vw;
@@ -1270,7 +1278,7 @@
             margin-bottom: 6vw;
         }
 
-        .imagewhole17 {
+        .snow-white {
             min-height: 70vw;
             margin-top: 7vw;
             margin-bottom: 14vw;
@@ -1282,14 +1290,14 @@
             margin-bottom: 0vw;
         }
 
-        .imagewhole18 {
+        .stepmother-juno {
             min-height: 70vw;
             margin-top: 7vw;
             margin-bottom: 15vw;
 
         }
 
-        .imagewhole19 {
+        .putana-kim {
             min-height: 170vw;
             margin-top: 7vw;
             margin-bottom: 2vw;

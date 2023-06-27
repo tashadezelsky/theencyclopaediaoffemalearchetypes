@@ -12,6 +12,7 @@ const targetDiv = document.getElementById("tabs_sidebar");
       }
     };
 
+    
 const btn = document.getElementById('pink-mode-toggle');
 
 // ✅ Toggle button text on click
@@ -66,7 +67,7 @@ pinkModeToggle.addEventListener('click', () => {
 
 function setupTabs () {
     document.querySelectorAll(".tabs_button").forEach(button => {
-        button.addEventListener("click", () => {
+       button.addEventListener("click", () => {
             const sideBar = button.parentElement;
             const tabsContainer = sideBar.parentElement;
             const tabNumber = button.dataset.forTab;
@@ -78,18 +79,18 @@ function setupTabs () {
 
             tabsContainer.querySelectorAll(".tabs_content").forEach(tab => {
                 tab.classList.remove("tabs_content--active");
-            });
+             });
 
             button.classList.add("tabs_button--active");
                 tabToActivate.classList.add("tabs_content--active");
 
-        });
-    });
-}
+         });
+     });
+ }
 
 document.addEventListener("DOMContentLoaded" , () => {
     setupTabs(); 
-});
+ });
 
 
 

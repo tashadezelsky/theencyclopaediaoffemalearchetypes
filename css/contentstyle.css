@@ -162,126 +162,25 @@
         }
 
 
-
-        /* button {
-                background-color: transparent;
-                border: none;
-                color: #009FE3;
-                margin: none;
-
-            }
-
-            button.past {
-                color: #009FE3 
-            }
-
-            button.past:hover {
-                cursor: pointer;
-            }
-
-        */
-
-
     /*-- Content --*/
 
-    #contentblue {
-        /*border: 2px solid green; 
-        background-color: #009FE3; */
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50% 50%;
-        grid-template-areas: 
-        "mother maiden"
-        "crone wild";
-        box-sizing: border-box;
-        max-width: 100vw;
-        max-height: 92vh;
-        margin-top: 1vh;
-
-    }
-
-    /* imgbgblue --*/
-
-
-        a.imglink :hover {
-            padding: 0;
-            margin: 0;
-            mix-blend-mode: normal;
-            
-        }
-
-
-        .mother {
-            mix-blend-mode: normal;
-            background-color: #fff000;
+        #content {
+            border: 2px solid green; 
+            background-color: #009FE3; */
+            display: grid;
+            /*grid-template-columns: 1fr 1fr;
+            grid-template-rows: 50% 50%;
+            grid-template-areas: 
+            "mother maiden"
+            "crone wild";*/
+            box-sizing: border-box;
+            max-width: 100vw;
+            margin-top: 1vh;
+            padding: 15px 15px;
 
         }
 
-        .mother :hover {
-            cursor: pointer;
-            mix-blend-mode: multiply;
-            background-color: var(--foregroundpink);
-        }
-
-        img.motherbg {
-            width: 100%;
-            height: 99%;
-            object-fit: cover;
-        }
-
-        .maiden {
-            mix-blend-mode: normal;
-            background-color: #fff000;
-
-        }
-
-        .maiden :hover {
-            cursor: pointer;
-            mix-blend-mode: multiply;
-            background-color: var(--foregroundpink);
-        }
-
-        img.maidenbg {
-            width: 100%;
-            height: 99%;
-            object-fit: cover;
-        }
-
-        .crone {
-            mix-blend-mode: normal;
-            background-color: #fff000;
-
-        }
-
-        .crone :hover {
-            cursor: pointer;
-            mix-blend-mode: multiply;
-            background-color: var(--foregroundpink);
-        }
-
-        img.cronebg {
-            width: 100%;
-            height: 99%;
-            object-fit: cover;
-        }
-
-        .wild {
-            mix-blend-mode: normal;
-            background-color: #fff000;
-
-        }
-
-        .wild :hover {
-            cursor: pointer;
-            mix-blend-mode: multiply;
-            background-color: var(--foregroundpink);
-        }
-
-        img.wildbg {
-            width: 100%;
-            height: 99%;
-            object-fit: cover;
-        }
+    /*--footer--*/
     
         .footer {
             /*border: 2px solid red;*/

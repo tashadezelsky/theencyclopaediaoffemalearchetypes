@@ -432,34 +432,40 @@
 
                 /*--footnotes--*/
         
-                    .footnotescontainer {
-                        /*border: 2px solid red;*/
-                        position: relative;
-                        flex-wrap: wrap;
-                        grid-column: span 2;
-                        grid-row-start: 8;
-                        grid-row-end: 9;
-                        font-family: orpheuspro;
-                        font-size: 0.8vw;
+                .footnotescontainer {
+                    /*border: 2px solid red;*/
+                    /*position: relative;*/
+                    flex-wrap: wrap;
+                    grid-column: span 2;
+                    grid-row-start: 8;
+                    grid-row-end: 9;
+                    font-family: orpheuspro;
+                    font-size: 0.8vw;
+                    display: grid;
+                    grid-template-rows: max-content max-content;
 
-                    }
+                }
 
-                    .footnotesbluecontainer {
-                        position: absolute;
-                        display: flex;
-                        flex-direction: column;
-                        list-style: numbers;
-                        color: var(--textblueopacity);
+                .footnotesbluecontainer {
+                    /*position: absolute;*/
+                    display: flex;
+                    /*flex-direction: column;*/
+                    list-style: numbers;
+                    color: var(--textblueopacity);
+                    grid-column: 1 / span 3;
+                    grid-row: 1 / span 1;
 
-                    }
+                }
 
-                    .footnotespinkcontainer {
-                        position: relative;
-                        display: flex;
-                        flex-direction: column;
-                        list-style: numbers;
-                        color: var(--textpinkopacity);
-                    }
+                .footnotespinkcontainer {
+                    /*position: relative;*/
+                    display: flex;
+                    /*flex-direction: column;*/
+                    list-style: numbers;
+                    color: var(--textpinkopacity);
+                    grid-column: 1 / span 3;
+                    grid-row: 1 / span 1;
+                }
 
                     ul.footnotes {
                         list-style: numbers;
