@@ -7,8 +7,6 @@
     --trans: 255, 255, 255;
     --alpha: 1;
     --beta: 0.1;
-    --blue2: 96,173,53;
-    --pink2: 252,0,71;
 
     --foreground: var(--blue);
     --background: var(--pink);
@@ -18,9 +16,6 @@
 
     --textblue: var(--blue);
     --textpink: var(--pink);
-    
-    --textblue2: var(--blue2);
-    --textpink2: var(--pink2);
 
     --textblueopacity: rgba(var(--blue), var(--alpha));
     --textpinkopacity: rgba(var(--pink), var(--beta));
@@ -36,8 +31,6 @@
     --trans: 255, 255, 255;
     --alpha: 1;
     --beta: 0.1;
-    --blue2: 96,173,53;
-    --pink2: 252,0,71;
 
     --foreground: var(--pink);
     --background: var(--blue);
@@ -47,9 +40,6 @@
 
     --textblue: var(--pink);
     --textpink: var(--blue);
-
-    --textblue2: var(--pink2);
-    --textpink2: var(--blue);
 
     --textblueopacity: rgba(var(--blue), var(--beta));
     --textpinkopacity: rgba(var(--pink), var(--alpha));
@@ -71,6 +61,7 @@
     src: url(fonts/neuehaas75.ttf);
 }*/
 
+/* -- neuehaas --*/
 
 @font-face {
     font-family: "neue-haas-grotesk-display", sans-serif;
@@ -80,8 +71,21 @@
 
 @font-face {
     font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: "neue-haas-grotesk-display", sans-serif;
     font-weight: 600;
     font-style: normal;
+}
+
+@font-face {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 600;
+    font-style: italic;
 }
 
 @font-face {
@@ -90,6 +94,25 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/*--orpheus--*/
+
+@font-face {
+    font-family: "orpheuspro", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "orpheuspro", serif;
+    font-weight: 400;
+    font-style: italic;
+}
 
 
 /* -- first iteration --*/
@@ -108,13 +131,14 @@
         box-sizing: border-box; --*/
         max-width: 100vw;
         height: auto;
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        /*grid-template-columns: 1fr;
         grid-template-rows: 5vh 95vh;
         grid-template-areas: 
         "header"
         "contentblue"
-        "contentpink";
+        "contentpink";*/
         max-width: 100vw;
         margin-bottom: -5vh;
         /* padding-left: 10px;
@@ -178,118 +202,56 @@
         }
 
 
-
-        /* button {
-                background-color: transparent;
-                border: none;
-                color: #009FE3;
-                margin: none;
-
-            }
-
-            button.past {
-                color: #009FE3 
-            }
-
-            button.past:hover {
-                cursor: pointer;
-            }
-
-        */
-
-
     /*-- Content --*/
 
-    #contentblue {
-        /*border: 2px solid green; 
-        background-color: #009FE3; */
+    .content {
+        /*border: 2px solid blue;*/
+        height: max-content;
+        font-family: neue-haas-grotesk-display;
+        color: rgba(var(--textblue),1);
+        mix-blend-mode: multiply;
+        margin-top: -20px;
+        padding: 0px 15px 15px 15px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50% 50%;
-        grid-template-areas: 
-        "mother maiden"
-        "crone wild";
-        box-sizing: border-box;
-        max-width: 100vw;
-        max-height: 97vh;
-        margin-top: 5px;
-
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: max-content max-content; 
+        z-index: 2;
+        
     }
 
-    /* imgs --*/
+    p .n {
+        font-family: neue-haas-grotesk-display;
+        font-weight: 600;
+    }
 
+    .text {
+        font-size: 2vw;
+        grid-column: 1 / span 2;
+    }
 
-        a.imglink :hover {
-            padding: 0;
-            margin: 0;
-            mix-blend-mode: normal;
-            
-        }
+    .links {
+        grid-row: 2 / span 3;
+        grid-column: 1 / span 1;
+        height: max-content;
+        font-size: 1.5vw;
+        padding-bottom: 0vw;
+    }
 
+    a {
+        text-decoration: none;
+        color: black;
+    }
 
-        .mother {
-            mix-blend-mode: normal;
-            background-color: #fff000;
-
-        }
-
-        .mother :hover {
-            cursor: pointer;
-            mix-blend-mode: multiply;
-            background-color: var(--foregroundpink);
-        }
-
-        img {
-            width: 100%;
-            height: 99%;
-            object-fit: cover;
-        }
-
-        .maiden {
-            mix-blend-mode: normal;
-            background-color: #fff000;
-
-        }
-
-        .maiden :hover {
-            cursor: pointer;
-            mix-blend-mode: multiply;
-            background-color: var(--foregroundpink);
-        }
-
-        .crone {
-            mix-blend-mode: normal;
-            background-color: #fff000;
-
-        }
-
-        .crone :hover {
-            cursor: pointer;
-            mix-blend-mode: multiply;
-            background-color: var(--foregroundpink);
-        }
-
-        .wild {
-            mix-blend-mode: normal;
-            background-color: #fff000;
-
-        }
-
-        .wild :hover {
-            cursor: pointer;
-            mix-blend-mode: multiply;
-            background-color: var(--foregroundpink);
-        }
-
-    /*-- footer --*/
+    /* -- footer --*/
     
         .footer {
+            /*border: 2px solid red;*/
             position: sticky;
             bottom: 0;
             display: flex;
             align-items: center;
             justify-content: right;
-            /*background: #fff000;*/
+            background: #fff000;
             max-width: 100vw;
             min-width: 100vw;
             height: 5vh;
@@ -297,26 +259,22 @@
             font-family: neue-haas-grotesk-display;
             font-weight: 600;
             margin-right: 15px;
-
         }
 
         .aboutbtn {
-            color: rgba(var(--textblue2),1);
+            color: rgba(var(--textblue),1);
             text-decoration: none;
             mix-blend-mode: multiply;
             padding-right: 15px;
         }
 
         .contentsbtn {
-            color: rgba(var(--textblue2),1);
+            color: rgba(var(--textblue),1);
             text-decoration: none;
             mix-blend-mode: multiply;
-
             padding-right: 15px;
-
         }
 
-    
 
 
 
@@ -329,29 +287,14 @@
    /*-- first iteration --*/
     @media (max-width: 900px) {
 
-        .wrapper {
-            /* border: 2px solid red;
-            box-sizing: border-box; --*/
-            max-width: 100vw;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            max-width: 100vw;
-            margin-bottom: -5vh;
-            /* padding-left: 10px;
-            padding-right: 10px;
-            padding-bottom: 25px; */
-        }
-
-        
         
         .header {  
-        top: 0;
-        font-size: 10px;
-        height: 5vh;
-        background-color: #fff000;
-        mix-blend-mode: normal;
-        }
+            top: 0;
+            font-size: 10px;
+            height: 5vh;
+            background-color: #fff000;
+            mix-blend-mode: normal;
+            }
 
         a.home {
             mix-blend-mode: multiply;
@@ -361,19 +304,26 @@
             mix-blend-mode: multiply;
         }
 
-        #contentblue {
-            display: flex;
-            /* flex-direction: column; */
-            /* min-height: max-content; */
-            /* gap: 0px; */
-            min-height: fit-content;
-            display: inline;
-            max-height: fit-content;
+        .content {
+            flex-direction: column;
+            font-size: 1em;
+            max-width: 100%;
+            margin-top: -10px;
+             padding-bottom: 30px;
         }
 
+        .text {
+            grid-column: 1 / span 3;
+            font-size: 5vw;
+        }
+
+        .links {
+            grid-column: 1 / span 2;
+            font-size: 5vw;
+        }
+
+
         .footer {
-            position: sticky;
-            bottom: 0;
             font-size: 10px;
             height: 5vh;
             padding: 0px;
@@ -386,6 +336,5 @@
         .contentsbtn {
             padding: 0px 15px 0px 15px;
         }
-
 
     }
