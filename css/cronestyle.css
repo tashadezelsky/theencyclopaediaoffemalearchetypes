@@ -146,6 +146,7 @@
         display: flex;
         flex-direction: column;
         max-width: 100vw;
+        margin-bottom: -5vh;
         /* padding-left: 10px;
         padding-right: 10px;*/
     }
@@ -252,12 +253,48 @@
                     
             }
 
+            /*-- footer --*/
+
+            /* .footer {
+            border: 2px solid red;
+            position: sticky;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            /*background: #fff000;
+            max-width: 100vw;
+            min-width: 100vw;
+            height: 5vh;
+            font-size: 1vw;
+            font-family: neue-haas-grotesk-display;
+            font-weight: 600;
+            margin-right: 15px;
+            mix-blend-mode: multiply;
+            z-index: 4;
+        }
+
+        .aboutbtn {
+            color: rgba(var(--textblue),1);
+            text-decoration: none;
+            mix-blend-mode: multiply;
+            padding-right: 15px;
+        }
+
+        .contentsbtn {
+            color: rgba(var(--textblue),1);
+            text-decoration: none;
+            mix-blend-mode: multiply;
+            padding-right: 15px;
+        }--*/
+
             .hamburgermenu {
                 display: none;  
               }
            
 
             /* tab buttons */
+
                     button.tabs_button {
                         display: flex;
                         align-items: center;
@@ -307,6 +344,7 @@
                 display: none;
                 /*border: 2px solid red;*/
                 margin-left: 17.5vw;
+                margin-bottom: -5vh;
                 padding: 20px 20px 0px 40px;
                 font-family: neue-haas-grotesk-display;
                 font-weight: 500;
@@ -1124,6 +1162,10 @@
                 min-height: 0vh;
                 min-width: 0vw;
                
+            }
+
+            .footer {
+                display: none;
             }
     
             /* .hamburgermenu {
