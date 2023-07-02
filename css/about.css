@@ -260,6 +260,7 @@
             font-family: neue-haas-grotesk-display;
             font-weight: 600;
             margin-right: 15px;
+            z-index: 4;
         }
 
         .aboutbtn {
