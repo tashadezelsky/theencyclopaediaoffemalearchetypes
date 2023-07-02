@@ -23,6 +23,8 @@
     --column: 200px;
     --margin: 15px;
 
+    --column-mobile: 500px
+
 }
 
 .pinkmode {
@@ -49,6 +51,8 @@
 
     --column: 200px;
     --margin: 15px;
+
+    --column-mobile: 150px
 }
 
 
@@ -722,71 +726,6 @@
             break-inside: avoid;
         }
 
-
-
-       
-
-        /*.grid-container {
-            display: grid;
-        }*/
-
-        /* table styling */
-
-        /* .indextable {
-            max-width: 98vw;
-            min-width: 98vw;
-            /*border: 1px solid #ddd;
-            font-size: 18px;
-            max-height: max-content;
-        }
-
-        #header-row {
-            /*background: cyan;
-            border: 2px solid red;
-            text-align: left;
-        } */
-
-        /*colums--*/
-
-        
-        /*#th {
-            font-weight: 500;
-            text-align: left;
-        }
-
-        .name {
-            width: 20%;
-        }
-
-        .main-archetype {
-            width: 20%;
-        }
-
-        .sub-archetype {
-            width: 20%;
-        }
-
-        .time {
-            width: 20%;
-        }
-
-        .culture {
-            width: 20%;
-        }
-
-        .titlename {
-            display: table-row;
-            font-size: 1w;
-            line-height: auto;
-        }
-
-        .archetypename {
-            display: table-row;
-            border: 2px solid blue;
-            font-size: 1vw;
-            line-height: auto;
-        } */
-
          /* -- footer --*/
     
          .footer {
@@ -831,8 +770,11 @@
    /*-- first iteration --*/
     @media (max-width: 900px) {
 
-        
-        
+        .wrapper {
+            min-height: max-content;
+            max-height: max-content;
+        }
+
         .header {  
         position: sticky;
         top: 0;
@@ -851,8 +793,156 @@
             mix-blend-mode: multiply;
         }
 
-        #contentblue {
-            display: inline-block;
-            min-height: 100vh;
-            gap: 0px;
+        .sidebar {
+            width: 30vw;
+            height: 92vh;
         }
+        
+        h1 {
+            font-size: 10vw;
+        }
+
+        .container {
+            margin-left: 30vw;
+            padding-left: 15px;
+            margin-right: 15px;
+            padding-top: 8px;
+        }
+
+        ul {
+            font-size: 5vw;
+        }
+
+        li {
+            font-size: 5vw;
+            line-height: 6vw;
+        }
+
+        p.archetypename {
+            margin: 0px 0px 0px 0px;
+            font-size: 4vw;
+            opacity: 0.5;
+
+        }
+
+        p.subarchetypename {
+            margin: 0px 0px 0px 0px;
+            font-size: 4vw;
+            opacity: 0.5;
+
+        }
+
+        .index-list {
+           column-width: var(--column-mobile);
+        }
+        
+
+        .titlenamea {
+            margin: 0px;
+        }
+
+        .titlenameb {
+            margin: 0px;
+        }
+
+        .titlenamec {
+            margin: 0px;
+        }
+
+        .titlenamed {
+            margin: 0px;
+        }
+
+        .titlenamee {
+            margin: 0px;
+        }
+
+        .titlenamef {
+            margin: 0px;
+        }
+
+        .titlenameg {
+            margin: 0px;
+        }
+
+        .titlenameh {
+            margin: 0px;
+        }
+
+        .titlenamei {
+            margin: 0px;
+        }
+
+        .titlenamej {
+            margin: 0px;
+        }
+
+        .titlenamek {
+            margin: 0px;
+        }
+
+        .titlenamel {
+            margin: 0px;
+        }
+
+        .titlenamem {
+            margin: 0px;
+        }
+
+        .titlenamen {
+            margin: 0px;
+        }
+
+        .titlenameo {
+            margin: 0px;
+        }
+
+        .titlenamep {
+            margin: 0px;
+        }
+
+        .titlenameq {
+            margin: 0px;
+        }
+
+        .titlenamer {
+            margin: 0px;
+        }
+
+        .titlenames {
+            margin: 0px;
+        }
+
+        .titlenamet {
+            margin: 0px;
+        }
+
+        .titlenameu {
+            margin: 0px;
+        }
+
+        .titlenamev {
+            margin: 0px;
+        }
+
+        .titlenamew {
+            margin: 0px;
+        }
+
+        .titlenamex {
+            margin: 0px;
+        }
+
+        .titlenamey {
+            margin: 0px;
+        }
+
+        .titlenamez {
+            margin: 0px;
+        }
+
+        .footer {
+            font-size: 10px;
+        }
+
+    }
