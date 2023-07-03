@@ -100,6 +100,7 @@
         flex-wrap: wrap;
         flex-direction: column;
         max-width: 100vw;
+        overflow-x: hidden;
     }
 
 
@@ -182,6 +183,7 @@
             width: 16vw;
             border-right: 2px solid rgba(var(--textblue),1);
             padding: 0px 0px 0px 15px;
+            z-index: 2;
             /*position: fixed;
             background-color: #fff000;*/
             
@@ -214,6 +216,7 @@
             overflow: hidden;
             margin-left: 17.5vw;
             margin-right: 40px;
+            z-index: 2;
         }
 
         .index-list {
@@ -743,20 +746,20 @@
     
          .footer {
                 /* border: 2px solid red; */
-                position: fixed;
-                bottom: 0;
-                display: flex;
-                align-items: center;
-                justify-content: right;
-                /* background: #fff000; */
-                max-width: 100vw;
-                min-width: 100vw;
-                height: 5vh;
-                font-size: 1vw;
-                font-family: neue-haas-grotesk-display;
-                font-weight: 600;
-                margin-right: 0px;
-                mix-blend-mode: multiply;
+                position: sticky;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            background: #fff000;
+            max-width: 100vw;
+            min-width: 100vw;
+            height: 5vh;
+            font-size: 1vw;
+            font-family: neue-haas-grotesk-display;
+            font-weight: 600;
+            margin-right: 15px;
+            z-index: 1;
         }
 
         .aboutbtn {
@@ -815,6 +818,10 @@
             font-size: 10vw;
         }
 
+        h2 {
+            font-size: 12vw;
+        }
+
         .container {
             margin-left: 30vw;
             padding-left: 15px;
@@ -831,6 +838,10 @@
             line-height: 6vw;
         }
 
+        i.referencename { 
+            font-size: 4vw;
+        }
+
         p.archetypename {
             margin: 0px 0px 0px 0px;
             font-size: 4vw;
@@ -839,7 +850,7 @@
         }
 
         p.subarchetypename {
-            margin: 0px 0px 0px 0px;
+            margin: 0px 0px 10px 0px;
             font-size: 4vw;
             opacity: 0.5;
 
@@ -852,106 +863,132 @@
 
         .titlenamea {
             margin: 0px;
+            line-height: 5vw;
         }
 
         .titlenameb {
             margin: 0px;
+            line-height: 5vw;
         }
 
         .titlenamec {
             margin: 0px;
+            line-height: 5vw;
         }
 
         .titlenamed {
             margin: 0px;
+            line-height: 5vw;
         }
 
         .titlenamee {
             margin: 0px;
+            line-height: 5vw;
         }
 
         .titlenamef {
             margin: 0px;
+            line-height: 5vw;
         }
 
         .titlenameg {
             margin: 0px;
+            line-height: 5vw;
         }
 
         .titlenameh {
             margin: 0px;
+            line-height: 5vw;
         }
 
         .titlenamei {
             margin: 0px;
+            line-height: 5vw;
         }
 
         .titlenamej {
             margin: 0px;
+            line-height: 5vw;
         }
 
         .titlenamek {
             margin: 0px;
+            line-height: 5vw;
         }
 
         .titlenamel {
             margin: 0px;
+            line-height: 5vw;
         }
 
         .titlenamem {
             margin: 0px;
+            line-height: 5vw;
         }
 
         .titlenamen {
             margin: 0px;
+            line-height: 5vw;
         }
 
         .titlenameo {
             margin: 0px;
+            line-height: 5vw;
         }
 
         .titlenamep {
             margin: 0px;
+            line-height: 5vw;
         }
 
         .titlenameq {
             margin: 0px;
+            line-height: 5vw;
         }
 
         .titlenamer {
             margin: 0px;
+            line-height: 5vw;
         }
 
         .titlenames {
             margin: 0px;
+            line-height: 5vw;
         }
 
         .titlenamet {
             margin: 0px;
+            line-height: 5vw;
         }
 
         .titlenameu {
             margin: 0px;
+            line-height: 5vw;
         }
 
         .titlenamev {
             margin: 0px;
+            line-height: 5vw;
         }
 
         .titlenamew {
             margin: 0px;
+            line-height: 5vw;
         }
 
         .titlenamex {
             margin: 0px;
+            line-height: 5vw;
         }
 
         .titlenamey {
             margin: 0px;
+            line-height: 5vw;
         }
 
         .titlenamez {
             margin: 0px;
+            line-height: 5vw;
         }
 
         .footer {
