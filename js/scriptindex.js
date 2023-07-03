@@ -126,6 +126,11 @@ function showInfos() {
           }
         }).appendTo('.a-class');
 
+        var nameReferenceA = document.createElement("i");
+        nameReferenceA.classList.add("referencename");
+        nameReferenceA.innerText = info.fields.reference;
+        nameTitleA.append(nameReferenceA);
+
         var nameArchetypeA = document.createElement("p");
         nameArchetypeA.classList.add("archetypename");
         nameArchetypeA.innerText = info.fields.archetype;
@@ -2062,7 +2067,7 @@ function showInfosX() {
         //showing names
 
         var nameTitleX = document.createElement("li");
-        nameTitleX.classList.add("titlenameq");
+        nameTitleX.classList.add("titlenamex");
         nameTitleX.innerText = info.fields.title;
         document.querySelector(".x-class").append(nameTitleX);
 
