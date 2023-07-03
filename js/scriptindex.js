@@ -214,6 +214,11 @@ function showInfosB() {
           }
         }).appendTo('.b-class');
 
+        var nameReferenceB = document.createElement("i");
+        nameReferenceB.classList.add("referencename");
+        nameReferenceB.innerText = info.fields.reference;
+        nameTitleB.append(nameReferenceB);
+
         var nameArchetypeB = document.createElement("p");
         nameArchetypeB.classList.add("archetypename");
         nameArchetypeB.innerText = info.fields.archetype;
@@ -297,6 +302,11 @@ function showInfosC() {
             return 1;
           }
         }).appendTo('.c-class');
+
+        var nameReferenceC = document.createElement("i");
+        nameReferenceC.classList.add("referencename");
+        nameReferenceC.innerText = info.fields.reference;
+        nameTitleC.append(nameReferenceC);
 
         var nameArchetypeC = document.createElement("p");
         nameArchetypeC.classList.add("archetypename");
@@ -382,6 +392,11 @@ function showInfosD() {
           }
         }).appendTo('.d-class');
 
+        var nameReferenceD = document.createElement("i");
+        nameReferenceD.classList.add("referencename");
+        nameReferenceD.innerText = info.fields.reference;
+        nameTitleD.append(nameReferenceD);
+
         var nameArchetypeD = document.createElement("p");
         nameArchetypeD.classList.add("archetypename");
         nameArchetypeD.innerText = info.fields.archetype;
@@ -465,6 +480,11 @@ function showInfosE() {
             return 1;
           }
         }).appendTo('.e-class');
+
+        var nameReferenceE = document.createElement("i");
+        nameReferenceE.classList.add("referencename");
+        nameReferenceE.innerText = info.fields.reference;
+        nameTitleE.append(nameReferenceE);
 
         var nameArchetypeE = document.createElement("p");
         nameArchetypeE.classList.add("archetypename");
@@ -550,6 +570,11 @@ function showInfosF() {
           }
         }).appendTo('.f-class');
 
+        var nameReferenceF = document.createElement("i");
+        nameReferenceF.classList.add("referencename");
+        nameReferenceF.innerText = info.fields.reference;
+        nameTitleF.append(nameReferenceF);
+
         var nameArchetypeF = document.createElement("p");
         nameArchetypeF.classList.add("archetypename");
         nameArchetypeF.innerText = info.fields.archetype;
@@ -633,6 +658,11 @@ function showInfosG() {
             return 1;
           }
         }).appendTo('.g-class');
+
+        var nameReferenceG = document.createElement("i");
+        nameReferenceG.classList.add("referencename");
+        nameReferenceG.innerText = info.fields.reference;
+        nameTitleG.append(nameReferenceG);
 
         var nameArchetypeG = document.createElement("p");
         nameArchetypeG.classList.add("archetypename");
@@ -718,6 +748,11 @@ function showInfosH() {
           }
         }).appendTo('.h-class');
 
+        var nameReferenceH = document.createElement("i");
+        nameReferenceH.classList.add("referencename");
+        nameReferenceH.innerText = info.fields.reference;
+        nameTitleH.append(nameReferenceH);
+
         var nameArchetypeH = document.createElement("p");
         nameArchetypeH.classList.add("archetypename");
         nameArchetypeH.innerText = info.fields.archetype;
@@ -802,6 +837,11 @@ function showInfosI() {
             return 1;
           }
         }).appendTo('.i-class');
+
+        var nameReferenceI = document.createElement("i");
+        nameReferenceI.classList.add("referencename");
+        nameReferenceI.innerText = info.fields.reference;
+        nameTitleI.append(nameReferenceI);
 
         var nameArchetypeI = document.createElement("p");
         nameArchetypeI.classList.add("archetypename");
@@ -889,6 +929,11 @@ function showInfosJ() {
           }
         }).appendTo('.j-class');
 
+        var nameReferenceJ = document.createElement("i");
+        nameReferenceJ.classList.add("referencename");
+        nameReferenceJ.innerText = info.fields.reference;
+        nameTitleJ.append(nameReferenceJ);
+
         var nameArchetypeJ = document.createElement("p");
         nameArchetypeJ.classList.add("archetypename");
         nameArchetypeJ.innerText = info.fields.archetype;
@@ -974,6 +1019,11 @@ function showInfosK() {
             return 1;
           }
         }).appendTo('.k-class');
+
+        var nameReferenceK = document.createElement("i");
+        nameReferenceK.classList.add("referencename");
+        nameReferenceK.innerText = info.fields.reference;
+        nameTitleK.append(nameReferenceK);
 
         var nameArchetypeK = document.createElement("p");
         nameArchetypeK.classList.add("archetypename");
@@ -1061,6 +1111,11 @@ function showInfosL() {
           }
         }).appendTo('.l-class');
 
+        var nameReferenceL = document.createElement("i");
+        nameReferenceL.classList.add("referencename");
+        nameReferenceL.innerText = info.fields.reference;
+        nameTitleL.append(nameReferenceL);
+
         var nameArchetypeL = document.createElement("p");
         nameArchetypeL.classList.add("archetypename");
         nameArchetypeL.innerText = info.fields.archetype;
@@ -1145,6 +1200,11 @@ function showInfosM() {
             return 1;
           }
         }).appendTo('.m-class');
+
+        var nameReferenceM = document.createElement("i");
+        nameReferenceM.classList.add("referencename");
+        nameReferenceM.innerText = info.fields.reference;
+        nameTitleM.append(nameReferenceM);
 
         var nameArchetypeM = document.createElement("p");
         nameArchetypeM.classList.add("archetypename");
@@ -1231,6 +1291,11 @@ function showInfosN() {
           }
         }).appendTo('.n-class');
 
+        var nameReferenceN = document.createElement("i");
+        nameReferenceN.classList.add("referencename");
+        nameReferenceN.innerText = info.fields.reference;
+        nameTitleN.append(nameReferenceN);
+
         var nameArchetypeN = document.createElement("p");
         nameArchetypeN.classList.add("archetypename");
         nameArchetypeN.innerText = info.fields.archetype;
@@ -1316,6 +1381,11 @@ function showInfosO() {
           }
         }).appendTo('.o-class');
 
+        var nameReferenceO = document.createElement("i");
+        nameReferenceO.classList.add("referencename");
+        nameReferenceO.innerText = info.fields.reference;
+        nameTitleO.append(nameReferenceO);
+
         var nameArchetypeO = document.createElement("p");
         nameArchetypeO.classList.add("archetypename");
         nameArchetypeO.innerText = info.fields.archetype;
@@ -1400,6 +1470,11 @@ function showInfosP() {
             return 1;
           }
         }).appendTo('.p-class');
+
+        var nameReferenceP = document.createElement("i");
+        nameReferenceP.classList.add("referencename");
+        nameReferenceP.innerText = info.fields.reference;
+        nameTitleP.append(nameReferenceP);
 
         var nameArchetypeP = document.createElement("p");
         nameArchetypeP.classList.add("archetypename");
@@ -1487,6 +1562,11 @@ function showInfosQ() {
           }
         }).appendTo('.q-class');
 
+        var nameReferenceQ = document.createElement("i");
+        nameReferenceQ.classList.add("referencename");
+        nameReferenceQ.innerText = info.fields.reference;
+        nameTitleQ.append(nameReferenceQ);
+
         var nameArchetypeQ = document.createElement("p");
         nameArchetypeQ.classList.add("archetypename");
         nameArchetypeQ.innerText = info.fields.archetype;
@@ -1572,6 +1652,11 @@ function showInfosR() {
             return 1;
           }
         }).appendTo('.r-class');
+
+        var nameReferenceR = document.createElement("i");
+        nameReferenceR.classList.add("referencename");
+        nameReferenceR.innerText = info.fields.reference;
+        nameTitleR.append(nameReferenceR);
 
         var nameArchetypeR = document.createElement("p");
         nameArchetypeR.classList.add("archetypename");
@@ -1659,6 +1744,11 @@ function showInfosS() {
           }
         }).appendTo('.s-class');
 
+        var nameReferenceS = document.createElement("i");
+        nameReferenceS.classList.add("referencename");
+        nameReferenceS.innerText = info.fields.reference;
+        nameTitleS.append(nameReferenceS);
+
         var nameArchetypeS = document.createElement("p");
         nameArchetypeS.classList.add("archetypename");
         nameArchetypeS.innerText = info.fields.archetype;
@@ -1743,6 +1833,11 @@ function showInfosT() {
             return 1;
           }
         }).appendTo('.t-class');
+
+        var nameReferenceT = document.createElement("i");
+        nameReferenceT.classList.add("referencename");
+        nameReferenceT.innerText = info.fields.reference;
+        nameTitleT.append(nameReferenceT);
 
         var nameArchetypeT = document.createElement("p");
         nameArchetypeT.classList.add("archetypename");
@@ -1830,6 +1925,11 @@ function showInfosU() {
           }
         }).appendTo('.u-class');
 
+        var nameReferenceU = document.createElement("i");
+        nameReferenceU.classList.add("referencename");
+        nameReferenceU.innerText = info.fields.reference;
+        nameTitleU.append(nameReferenceU);
+
         var nameArchetypeU = document.createElement("p");
         nameArchetypeU.classList.add("archetypename");
         nameArchetypeU.innerText = info.fields.archetype;
@@ -1915,6 +2015,11 @@ function showInfosV() {
           }
         }).appendTo('.v-class');
 
+        var nameReferenceV = document.createElement("i");
+        nameReferenceV.classList.add("referencename");
+        nameReferenceV.innerText = info.fields.reference;
+        nameTitleV.append(nameReferenceV);
+
         var nameArchetypeV = document.createElement("p");
         nameArchetypeV.classList.add("archetypename");
         nameArchetypeV.innerText = info.fields.archetype;
@@ -1999,6 +2104,11 @@ function showInfosW() {
             return 1;
           }
         }).appendTo('.w-class');
+
+        var nameReferenceW = document.createElement("i");
+        nameReferenceW.classList.add("referencename");
+        nameReferenceW.innerText = info.fields.reference;
+        nameTitleW.append(nameReferenceW);
 
         var nameArchetypeW = document.createElement("p");
         nameArchetypeW.classList.add("archetypename");
@@ -2086,6 +2196,11 @@ function showInfosX() {
           }
         }).appendTo('.x-class');
 
+        var nameReferenceX = document.createElement("i");
+        nameReferenceX.classList.add("referencename");
+        nameReferenceX.innerText = info.fields.reference;
+        nameTitleX.append(nameReferenceX);
+
         var nameArchetypeX = document.createElement("p");
         nameArchetypeX.classList.add("archetypename");
         nameArchetypeX.innerText = info.fields.archetype;
@@ -2172,6 +2287,11 @@ function showInfosY() {
           }
         }).appendTo('.y-class');
 
+        var nameReferenceY = document.createElement("i");
+        nameReferenceY.classList.add("referencename");
+        nameReferenceY.innerText = info.fields.reference;
+        nameTitleY.append(nameReferenceY);
+
         var nameArchetypeY = document.createElement("p");
         nameArchetypeY.classList.add("archetypename");
         nameArchetypeY.innerText = info.fields.archetype;
@@ -2257,6 +2377,11 @@ function showInfosZ() {
             return 1;
           }
         }).appendTo('.z-class');
+
+        var nameReferenceZ = document.createElement("i");
+        nameReferenceZ.classList.add("referencename");
+        nameReferenceZ.innerText = info.fields.reference;
+        nameTitleZ.append(nameReferenceZ);
 
         var nameArchetypeZ = document.createElement("p");
         nameArchetypeZ.classList.add("archetypename");
