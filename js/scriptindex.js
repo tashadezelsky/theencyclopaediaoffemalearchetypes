@@ -105,17 +105,12 @@ function showInfos() {
         //showing names
 
 
-        var nameTitleA = document.createElement("li");
-        nameTitleA.classList.add("titlenamea");
-        nameTitleA.innerText = info.fields.title;
+        var nameWholeA = document.createElement("a");
+        nameWholeA.classList.add("titlenamea");
+        nameWholeA.innerText = info.fields.title;
+        nameWholeA.href = info.fields.source;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        document.querySelector(".a-class").append(nameTitleA);
-
-        
-        /*var nameTitle = document.createElement("li");
-        nameTitle.classList.add("titlename");
-        nameTitle.innerText = info.fields.title;
-        document.querySelector("#a-class").append(nameTitle);*/
+        document.querySelector(".a-class").append(nameWholeA);
 
        //sorts array into alphabetical order
         $('.titlenamea').sort(function(a, b) {
@@ -126,22 +121,28 @@ function showInfos() {
           }
         }).appendTo('.a-class');
 
+        /*var nameTitleA = document.createElement("a");
+        nameTitleA.classList.add("charactername");
+        nameTitleA.innerText = info.fields.title;
+        nameTitleA.href = info.fields.source;
+        nameWholeA.append(nameTitleA);*/
+
         var nameReferenceA = document.createElement("i");
         nameReferenceA.classList.add("referencename");
         nameReferenceA.innerText = info.fields.reference;
-        nameTitleA.append(nameReferenceA);
+        nameWholeA.append(nameReferenceA);
 
         var nameArchetypeA = document.createElement("p");
         nameArchetypeA.classList.add("archetypename");
         nameArchetypeA.innerText = info.fields.archetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleA.append(nameArchetypeA);
+        nameWholeA.append(nameArchetypeA);
 
         var nameSubarchetypeA = document.createElement("p");
         nameSubarchetypeA.classList.add("subarchetypename");
         nameSubarchetypeA.innerText = info.fields.subarchetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleA.append(nameSubarchetypeA);
+        nameWholeA.append(nameSubarchetypeA);
 
 })
 
@@ -194,10 +195,9 @@ function showInfosB() {
 
         //showing names
 
-        var nameTitleB = document.createElement("li");
-        nameTitleB.classList.add("titlenameb");
-        nameTitleB.innerText = info.fields.title;
-        document.querySelector(".b-class").append(nameTitleB);
+        var nameWholeB = document.createElement("li");
+        nameWholeB.classList.add("titlenameb");
+        document.querySelector(".b-class").append(nameWholeB);
 
         
         /*var nameTitle = document.createElement("li");
@@ -214,22 +214,28 @@ function showInfosB() {
           }
         }).appendTo('.b-class');
 
+        var nameTitleB = document.createElement("a");
+        nameTitleB.classList.add("charactername");
+        nameTitleB.innerText = info.fields.title;
+        nameTitleB.href = info.fields.source;
+        nameWholeB.append(nameTitleB);
+
         var nameReferenceB = document.createElement("i");
         nameReferenceB.classList.add("referencename");
         nameReferenceB.innerText = info.fields.reference;
-        nameTitleB.append(nameReferenceB);
+        nameWholeB.append(nameReferenceB);
 
         var nameArchetypeB = document.createElement("p");
         nameArchetypeB.classList.add("archetypename");
         nameArchetypeB.innerText = info.fields.archetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleB.append(nameArchetypeB);
+        nameWholeB.append(nameArchetypeB);
 
         var nameSubarchetypeB = document.createElement("p");
         nameSubarchetypeB.classList.add("subarchetypename");
         nameSubarchetypeB.innerText = info.fields.subarchetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleB.append(nameSubarchetypeB);
+        nameWholeB.append(nameSubarchetypeB);
  
 
 })
@@ -283,10 +289,9 @@ function showInfosC() {
 
         //showing names
 
-        var nameTitleC = document.createElement("li");
-        nameTitleC.classList.add("titlenamec");
-        nameTitleC.innerText = info.fields.title;
-        document.querySelector(".c-class").append(nameTitleC);
+        var nameWholeC = document.createElement("li");
+        nameWholeC.classList.add("titlenamec");
+        document.querySelector(".c-class").append(nameWholeC);
 
         
         /*var nameTitle = document.createElement("li");
@@ -303,22 +308,28 @@ function showInfosC() {
           }
         }).appendTo('.c-class');
 
+        var nameTitleC = document.createElement("a");
+        nameTitleC.classList.add("titlename");
+        nameTitleC.innerText = info.fields.title;
+        nameTitleC.href = info.fields.source;
+        nameWholeC.append(nameTitleC);
+
         var nameReferenceC = document.createElement("i");
         nameReferenceC.classList.add("referencename");
         nameReferenceC.innerText = info.fields.reference;
-        nameTitleC.append(nameReferenceC);
+        nameWholeC.append(nameReferenceC);
 
         var nameArchetypeC = document.createElement("p");
         nameArchetypeC.classList.add("archetypename");
         nameArchetypeC.innerText = info.fields.archetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleC.append(nameArchetypeC);
+        nameWholeC.append(nameArchetypeC);
 
         var nameSubarchetypeC = document.createElement("p");
         nameSubarchetypeC.classList.add("subarchetypename");
         nameSubarchetypeC.innerText = info.fields.subarchetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleC.append(nameSubarchetypeC);
+        nameWholeC.append(nameSubarchetypeC);
  
 
 })
@@ -372,16 +383,9 @@ function showInfosD() {
 
         //showing names
 
-        var nameTitleD = document.createElement("li");
-        nameTitleD.classList.add("titlenamed");
-        nameTitleD.innerText = info.fields.title;
-        document.querySelector(".d-class").append(nameTitleD);
-
-        
-        /*var nameTitle = document.createElement("li");
-        nameTitle.classList.add("titlename");
-        nameTitle.innerText = info.fields.title;
-        document.querySelector("#a-class").append(nameTitle);*/
+        var nameWholeD = document.createElement("li");
+        nameWholeD.classList.add("titlenamed");
+        document.querySelector(".d-class").append(nameWholeD);
 
        //sorts array into alphabetical order
         $('.titlenamed').sort(function(a, b) {
@@ -392,22 +396,28 @@ function showInfosD() {
           }
         }).appendTo('.d-class');
 
+        var nameTitleD = document.createElement("a");
+        nameTitleD.classList.add("chartactername");
+        nameTitleD.innerText = info.fields.title;
+        nameTitleD.href = info.fields.source;
+        nameWholeD.append(nameTitleD);
+
         var nameReferenceD = document.createElement("i");
         nameReferenceD.classList.add("referencename");
         nameReferenceD.innerText = info.fields.reference;
-        nameTitleD.append(nameReferenceD);
+        nameWholeD.append(nameReferenceD);
 
         var nameArchetypeD = document.createElement("p");
         nameArchetypeD.classList.add("archetypename");
         nameArchetypeD.innerText = info.fields.archetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleD.append(nameArchetypeD);
+        nameWholeD.append(nameArchetypeD);
 
         var nameSubarchetypeD = document.createElement("p");
         nameSubarchetypeD.classList.add("subarchetypename");
         nameSubarchetypeD.innerText = info.fields.subarchetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleD.append(nameSubarchetypeD);
+        nameWholeD.append(nameSubarchetypeD);
  
 
 })
@@ -461,10 +471,9 @@ function showInfosE() {
 
         //showing names
 
-        var nameTitleE = document.createElement("li");
-        nameTitleE.classList.add("titlenamee");
-        nameTitleE.innerText = info.fields.title;
-        document.querySelector(".e-class").append(nameTitleE);
+        var nameWholeE = document.createElement("li");
+        nameWholeE.classList.add("titlenamee");
+        document.querySelector(".e-class").append(nameWholeE);
 
         
         /*var nameTitle = document.createElement("li");
@@ -481,22 +490,28 @@ function showInfosE() {
           }
         }).appendTo('.e-class');
 
+        var nameTitleE = document.createElement("a");
+        nameTitleE.classList.add("charactername");
+        nameTitleE.innerText = info.fields.title;
+        nameTitleE.href = info.fields.source;
+        nameWholeE.append(nameTitleE);
+
         var nameReferenceE = document.createElement("i");
         nameReferenceE.classList.add("referencename");
         nameReferenceE.innerText = info.fields.reference;
-        nameTitleE.append(nameReferenceE);
+        nameWholeE.append(nameReferenceE);
 
         var nameArchetypeE = document.createElement("p");
         nameArchetypeE.classList.add("archetypename");
         nameArchetypeE.innerText = info.fields.archetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleE.append(nameArchetypeE);
+        nameWholeE.append(nameArchetypeE);
 
         var nameSubarchetypeE = document.createElement("p");
         nameSubarchetypeE.classList.add("subarchetypename");
         nameSubarchetypeE.innerText = info.fields.subarchetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleE.append(nameSubarchetypeE);
+        nameWholeE.append(nameSubarchetypeE);
  
 
 })
@@ -550,10 +565,9 @@ function showInfosF() {
 
         //showing names
 
-        var nameTitleF = document.createElement("li");
-        nameTitleF.classList.add("titlenamef");
-        nameTitleF.innerText = info.fields.title;
-        document.querySelector(".f-class").append(nameTitleF);
+        var nameWholeF = document.createElement("li");
+        nameWholeF.classList.add("titlenamef");
+        document.querySelector(".f-class").append(nameWholeF);
 
         
         /*var nameTitle = document.createElement("li");
@@ -569,23 +583,29 @@ function showInfosF() {
             return 1;
           }
         }).appendTo('.f-class');
+        
+        var nameTitleF = document.createElement("a");
+        nameTitleF.classList.add("charactername");
+        nameTitleF.innerText = info.fields.title;
+        nameTitleF.href = info.fields.source;
+        nameWholeF.append(nameTitleF);
 
         var nameReferenceF = document.createElement("i");
         nameReferenceF.classList.add("referencename");
         nameReferenceF.innerText = info.fields.reference;
-        nameTitleF.append(nameReferenceF);
+        nameWholeF.append(nameReferenceF);
 
         var nameArchetypeF = document.createElement("p");
         nameArchetypeF.classList.add("archetypename");
         nameArchetypeF.innerText = info.fields.archetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleF.append(nameArchetypeF);
+        nameWholeF.append(nameArchetypeF);
 
         var nameSubarchetypeF = document.createElement("p");
         nameSubarchetypeF.classList.add("subarchetypename");
         nameSubarchetypeF.innerText = info.fields.subarchetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleF.append(nameSubarchetypeF);
+        nameWholeF.append(nameSubarchetypeF);
  
 
 })
@@ -639,10 +659,10 @@ function showInfosG() {
 
         //showing names
 
-        var nameTitleG = document.createElement("li");
-        nameTitleG.classList.add("titlenameg");
-        nameTitleG.innerText = info.fields.title;
-        document.querySelector(".g-class").append(nameTitleG);
+        var nameWholeG = document.createElement("li");
+        nameWholeG.classList.add("titlenameg");
+        /*document.querySelector("#a-class").append(nameTitle);*/
+        document.querySelector(".g-class").append(nameWholeG);
 
         
         /*var nameTitle = document.createElement("li");
@@ -659,22 +679,28 @@ function showInfosG() {
           }
         }).appendTo('.g-class');
 
+        var nameTitleG = document.createElement("a");
+        nameTitleG.classList.add("charactername");
+        nameTitleG.innerText = info.fields.title;
+        nameTitleG.href = info.fields.source;
+        nameWholeG.append(nameTitleG);
+
         var nameReferenceG = document.createElement("i");
         nameReferenceG.classList.add("referencename");
         nameReferenceG.innerText = info.fields.reference;
-        nameTitleG.append(nameReferenceG);
+        nameWholeG.append(nameReferenceG);
 
         var nameArchetypeG = document.createElement("p");
         nameArchetypeG.classList.add("archetypename");
         nameArchetypeG.innerText = info.fields.archetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleG.append(nameArchetypeG);
+        nameWholeG.append(nameArchetypeG);
 
         var nameSubarchetypeG = document.createElement("p");
         nameSubarchetypeG.classList.add("subarchetypename");
         nameSubarchetypeG.innerText = info.fields.subarchetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleG.append(nameSubarchetypeG);
+        nameWholeG.append(nameSubarchetypeG);
  
 
 })
@@ -728,10 +754,9 @@ function showInfosH() {
 
         //showing names
 
-        var nameTitleH = document.createElement("li");
-        nameTitleH.classList.add("titlenameh");
-        nameTitleH.innerText = info.fields.title;
-        document.querySelector(".h-class").append(nameTitleH);
+        var nameWholeH = document.createElement("li");
+        nameWholeH.classList.add("titlenameh");
+        document.querySelector(".h-class").append(nameWholeH);
 
         
         /*var nameTitle = document.createElement("li");
@@ -748,22 +773,28 @@ function showInfosH() {
           }
         }).appendTo('.h-class');
 
+        var nameTitleH = document.createElement("a");
+        nameTitleH.classList.add("charactername");
+        nameTitleH.innerText = info.fields.title;
+        nameTitleH.href = info.fields.source;
+        nameWholeH.append(nameTitleH);
+
         var nameReferenceH = document.createElement("i");
         nameReferenceH.classList.add("referencename");
         nameReferenceH.innerText = info.fields.reference;
-        nameTitleH.append(nameReferenceH);
+        nameWholeH.append(nameReferenceH);
 
         var nameArchetypeH = document.createElement("p");
         nameArchetypeH.classList.add("archetypename");
         nameArchetypeH.innerText = info.fields.archetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleH.append(nameArchetypeH);
+        nameWholeH.append(nameArchetypeH);
 
         var nameSubarchetypeH = document.createElement("p");
         nameSubarchetypeH.classList.add("subarchetypename");
         nameSubarchetypeH.innerText = info.fields.subarchetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleH.append(nameSubarchetypeH);
+        nameWholeH.append(nameSubarchetypeH);
  
 
 })
@@ -818,10 +849,9 @@ function showInfosI() {
 
         //showing names
 
-        var nameTitleI = document.createElement("li");
-        nameTitleI.classList.add("titlenamei");
-        nameTitleI.innerText = info.fields.title;
-        document.querySelector(".i-class").append(nameTitleI);
+        var nameWholeI = document.createElement("li");
+        nameWholeI.classList.add("titlenamei");
+        document.querySelector(".i-class").append(nameWholeI);
 
         
         /*var nameTitle = document.createElement("li");
@@ -838,22 +868,28 @@ function showInfosI() {
           }
         }).appendTo('.i-class');
 
+        var nameTitleI = document.createElement("a");
+        nameTitleI.classList.add("charactername");
+        nameTitleI.innerText = info.fields.title;
+        nameTitleI.href = info.fields.source;
+        nameWholeI.append(nameTitleI);
+
         var nameReferenceI = document.createElement("i");
         nameReferenceI.classList.add("referencename");
         nameReferenceI.innerText = info.fields.reference;
-        nameTitleI.append(nameReferenceI);
+        nameWholeI.append(nameReferenceI);
 
         var nameArchetypeI = document.createElement("p");
         nameArchetypeI.classList.add("archetypename");
         nameArchetypeI.innerText = info.fields.archetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleI.append(nameArchetypeI);
+        nameWholeI.append(nameArchetypeI);
 
         var nameSubarchetypeI = document.createElement("p");
         nameSubarchetypeI.classList.add("subarchetypename");
         nameSubarchetypeI.innerText = info.fields.subarchetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleI.append(nameSubarchetypeI);
+        nameWholeI.append(nameSubarchetypeI);
  
 
 })
@@ -909,10 +945,9 @@ function showInfosJ() {
 
         //showing names
 
-        var nameTitleJ = document.createElement("li");
-        nameTitleJ.classList.add("titlenamej");
-        nameTitleJ.innerText = info.fields.title;
-        document.querySelector(".j-class").append(nameTitleJ);
+        var nameWholeJ = document.createElement("li");
+        nameWholeJ.classList.add("titlenamej");
+        document.querySelector(".j-class").append(nameWholeJ);
 
         
         /*var nameTitle = document.createElement("li");
@@ -929,22 +964,28 @@ function showInfosJ() {
           }
         }).appendTo('.j-class');
 
+        var nameTitleJ = document.createElement("a");
+        nameTitleJ.classList.add("charactername");
+        nameTitleJ.innerText = info.fields.title;
+        nameTitleJ.href = info.fields.source;
+        nameWholeJ.append(nameTitleJ);
+
         var nameReferenceJ = document.createElement("i");
         nameReferenceJ.classList.add("referencename");
         nameReferenceJ.innerText = info.fields.reference;
-        nameTitleJ.append(nameReferenceJ);
+        nameWholeJ.append(nameReferenceJ);
 
         var nameArchetypeJ = document.createElement("p");
         nameArchetypeJ.classList.add("archetypename");
         nameArchetypeJ.innerText = info.fields.archetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleJ.append(nameArchetypeJ);
+        nameWholeJ.append(nameArchetypeJ);
 
         var nameSubarchetypeJ = document.createElement("p");
         nameSubarchetypeJ.classList.add("subarchetypename");
         nameSubarchetypeJ.innerText = info.fields.subarchetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleJ.append(nameSubarchetypeJ);
+        nameWholeJ.append(nameSubarchetypeJ);
  
 
 })
@@ -1000,10 +1041,9 @@ function showInfosK() {
 
         //showing names
 
-        var nameTitleK = document.createElement("li");
-        nameTitleK.classList.add("titlenamek");
-        nameTitleK.innerText = info.fields.title;
-        document.querySelector(".k-class").append(nameTitleK);
+        var nameWholeK = document.createElement("li");
+        nameWholeK.classList.add("titlenamek");
+        document.querySelector(".k-class").append(nameWholeK);
 
         
         /*var nameTitle = document.createElement("li");
@@ -1020,22 +1060,28 @@ function showInfosK() {
           }
         }).appendTo('.k-class');
 
+        var nameTitleK = document.createElement("a");
+        nameTitleK.classList.add("charactername");
+        nameTitleK.innerText = info.fields.title;
+        nameTitleK.href = info.fields.source;
+        nameWholeK.append(nameTitleK);
+
         var nameReferenceK = document.createElement("i");
         nameReferenceK.classList.add("referencename");
         nameReferenceK.innerText = info.fields.reference;
-        nameTitleK.append(nameReferenceK);
+        nameWholeK.append(nameReferenceK);
 
         var nameArchetypeK = document.createElement("p");
         nameArchetypeK.classList.add("archetypename");
         nameArchetypeK.innerText = info.fields.archetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleK.append(nameArchetypeK);
+        nameWholeK.append(nameArchetypeK);
 
         var nameSubarchetypeK = document.createElement("p");
         nameSubarchetypeK.classList.add("subarchetypename");
         nameSubarchetypeK.innerText = info.fields.subarchetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleK.append(nameSubarchetypeK);
+        nameWholeK.append(nameSubarchetypeK);
  
 
 })
@@ -1091,10 +1137,9 @@ function showInfosL() {
 
         //showing names
 
-        var nameTitleL = document.createElement("li");
-        nameTitleL.classList.add("titlenamel");
-        nameTitleL.innerText = info.fields.title;
-        document.querySelector(".l-class").append(nameTitleL);
+        var nameWholeL = document.createElement("li");
+        nameWholeL.classList.add("titlenamel");
+        document.querySelector(".l-class").append(nameWholeL);
 
         
         /*var nameTitle = document.createElement("li");
@@ -1111,22 +1156,28 @@ function showInfosL() {
           }
         }).appendTo('.l-class');
 
+        var nameTitleL = document.createElement("a");
+        nameTitleL.classList.add("charactername");
+        nameTitleL.innerText = info.fields.title;
+        nameTitleL.href = info.fields.source;
+        nameWholeL.append(nameTitleL);
+
         var nameReferenceL = document.createElement("i");
         nameReferenceL.classList.add("referencename");
         nameReferenceL.innerText = info.fields.reference;
-        nameTitleL.append(nameReferenceL);
+        nameWholeL.append(nameReferenceL);
 
         var nameArchetypeL = document.createElement("p");
         nameArchetypeL.classList.add("archetypename");
         nameArchetypeL.innerText = info.fields.archetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleL.append(nameArchetypeL);
+        nameWholeL.append(nameArchetypeL);
 
         var nameSubarchetypeL = document.createElement("p");
         nameSubarchetypeL.classList.add("subarchetypename");
         nameSubarchetypeL.innerText = info.fields.subarchetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleL.append(nameSubarchetypeL);
+        nameWholeL.append(nameSubarchetypeL);
  
 
 })
@@ -1181,10 +1232,9 @@ function showInfosM() {
 
         //showing names
 
-        var nameTitleM = document.createElement("li");
-        nameTitleM.classList.add("titlenamem");
-        nameTitleM.innerText = info.fields.title;
-        document.querySelector(".m-class").append(nameTitleM);
+        var nameWholeM = document.createElement("li");
+        nameWholeM.classList.add("titlenamem");
+        document.querySelector(".m-class").append(nameWholeM);
 
         
         /*var nameTitle = document.createElement("li");
@@ -1201,22 +1251,28 @@ function showInfosM() {
           }
         }).appendTo('.m-class');
 
+        var nameTitleM = document.createElement("a");
+        nameTitleM.classList.add("charactername");
+        nameTitleM.innerText = info.fields.title;
+        nameTitleM.href = info.fields.source;
+        nameWholeM.append(nameTitleM);
+
         var nameReferenceM = document.createElement("i");
         nameReferenceM.classList.add("referencename");
         nameReferenceM.innerText = info.fields.reference;
-        nameTitleM.append(nameReferenceM);
+        nameWholeM.append(nameReferenceM);
 
         var nameArchetypeM = document.createElement("p");
         nameArchetypeM.classList.add("archetypename");
         nameArchetypeM.innerText = info.fields.archetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleM.append(nameArchetypeM);
+        nameWholeM.append(nameArchetypeM);
 
         var nameSubarchetypeM = document.createElement("p");
         nameSubarchetypeM.classList.add("subarchetypename");
         nameSubarchetypeM.innerText = info.fields.subarchetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleM.append(nameSubarchetypeM);
+        nameWholeM.append(nameSubarchetypeM);
  
 
 })
@@ -1271,10 +1327,9 @@ function showInfosN() {
 
         //showing names
 
-        var nameTitleN = document.createElement("li");
-        nameTitleN.classList.add("titlenamen");
-        nameTitleN.innerText = info.fields.title;
-        document.querySelector(".n-class").append(nameTitleN);
+        var nameWholeN = document.createElement("li");
+        nameWholeN.classList.add("titlenamen");
+        document.querySelector(".n-class").append(nameWholeN);
 
         
         /*var nameTitle = document.createElement("li");
@@ -1291,22 +1346,28 @@ function showInfosN() {
           }
         }).appendTo('.n-class');
 
+        var nameTitleN = document.createElement("a");
+        nameTitleN.classList.add("charactername");
+        nameTitleN.innerText = info.fields.title;
+        nameTitleN.href = info.fields.source;
+        nameWholeN.append(nameTitleN);
+
         var nameReferenceN = document.createElement("i");
         nameReferenceN.classList.add("referencename");
         nameReferenceN.innerText = info.fields.reference;
-        nameTitleN.append(nameReferenceN);
+        nameWholeN.append(nameReferenceN);
 
         var nameArchetypeN = document.createElement("p");
         nameArchetypeN.classList.add("archetypename");
         nameArchetypeN.innerText = info.fields.archetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleN.append(nameArchetypeN);
+        nameWholeN.append(nameArchetypeN);
 
         var nameSubarchetypeN = document.createElement("p");
         nameSubarchetypeN.classList.add("subarchetypename");
         nameSubarchetypeN.innerText = info.fields.subarchetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleN.append(nameSubarchetypeN);
+        nameWholeN.append(nameSubarchetypeN);
  
 
 })
@@ -1361,10 +1422,9 @@ function showInfosO() {
 
         //showing names
 
-        var nameTitleO = document.createElement("li");
-        nameTitleO.classList.add("titlenameo");
-        nameTitleO.innerText = info.fields.title;
-        document.querySelector(".o-class").append(nameTitleO);
+        var nameWholeO = document.createElement("li");
+        nameWholeO.classList.add("titlenameo");
+        document.querySelector(".o-class").append(nameWholeO);
 
         
         /*var nameTitle = document.createElement("li");
@@ -1381,22 +1441,28 @@ function showInfosO() {
           }
         }).appendTo('.o-class');
 
+        var nameTitleO = document.createElement("a");
+        nameTitleO.classList.add("charactername");
+        nameTitleO.innerText = info.fields.title;
+        nameTitleO.href = info.fields.source;
+        nameWholeO.append(nameTitleO);
+
         var nameReferenceO = document.createElement("i");
         nameReferenceO.classList.add("referencename");
         nameReferenceO.innerText = info.fields.reference;
-        nameTitleO.append(nameReferenceO);
+        nameWholeO.append(nameReferenceO);
 
         var nameArchetypeO = document.createElement("p");
         nameArchetypeO.classList.add("archetypename");
         nameArchetypeO.innerText = info.fields.archetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleO.append(nameArchetypeO);
+        nameWholeO.append(nameArchetypeO);
 
         var nameSubarchetypeO = document.createElement("p");
         nameSubarchetypeO.classList.add("subarchetypename");
         nameSubarchetypeO.innerText = info.fields.subarchetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleO.append(nameSubarchetypeO);
+        nameWholeO.append(nameSubarchetypeO);
  
 
 })
@@ -1451,10 +1517,9 @@ function showInfosP() {
 
         //showing names
 
-        var nameTitleP = document.createElement("li");
-        nameTitleP.classList.add("titlenamep");
-        nameTitleP.innerText = info.fields.title;
-        document.querySelector(".p-class").append(nameTitleP);
+        var nameWholeP = document.createElement("li");
+        nameWholeP.classList.add("titlenamep");
+        document.querySelector(".p-class").append(nameWholeP);
 
         
         /*var nameTitle = document.createElement("li");
@@ -1471,22 +1536,28 @@ function showInfosP() {
           }
         }).appendTo('.p-class');
 
+        var nameTitleP = document.createElement("a");
+        nameTitleP.classList.add("charactername");
+        nameTitleP.innerText = info.fields.title;
+        nameTitleP.href = info.fields.source;
+        nameWholeP.append(nameTitleP);
+
         var nameReferenceP = document.createElement("i");
         nameReferenceP.classList.add("referencename");
         nameReferenceP.innerText = info.fields.reference;
-        nameTitleP.append(nameReferenceP);
+        nameWholeP.append(nameReferenceP);
 
         var nameArchetypeP = document.createElement("p");
         nameArchetypeP.classList.add("archetypename");
         nameArchetypeP.innerText = info.fields.archetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleP.append(nameArchetypeP);
+        nameWholeP.append(nameArchetypeP);
 
         var nameSubarchetypeP = document.createElement("p");
         nameSubarchetypeP.classList.add("subarchetypename");
         nameSubarchetypeP.innerText = info.fields.subarchetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleP.append(nameSubarchetypeP);
+        nameWholeP.append(nameSubarchetypeP);
  
 
 })
@@ -1542,10 +1613,9 @@ function showInfosQ() {
 
         //showing names
 
-        var nameTitleQ = document.createElement("li");
-        nameTitleQ.classList.add("titlenameq");
-        nameTitleQ.innerText = info.fields.title;
-        document.querySelector(".q-class").append(nameTitleQ);
+        var nameWholeQ = document.createElement("li");
+        nameWholeQ.classList.add("titlenameq");
+        document.querySelector(".q-class").append(nameWholeQ);
 
         
         /*var nameTitle = document.createElement("li");
@@ -1562,22 +1632,28 @@ function showInfosQ() {
           }
         }).appendTo('.q-class');
 
+        var nameTitleQ = document.createElement("a");
+        nameTitleQ.classList.add("charactername");
+        nameTitleQ.innerText = info.fields.title;
+        nameTitleQ.href = info.fields.source;
+        nameWholeQ.append(nameTitleQ);
+
         var nameReferenceQ = document.createElement("i");
         nameReferenceQ.classList.add("referencename");
         nameReferenceQ.innerText = info.fields.reference;
-        nameTitleQ.append(nameReferenceQ);
+        nameWholeQ.append(nameReferenceQ);
 
         var nameArchetypeQ = document.createElement("p");
         nameArchetypeQ.classList.add("archetypename");
         nameArchetypeQ.innerText = info.fields.archetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleQ.append(nameArchetypeQ);
+        nameWholeQ.append(nameArchetypeQ);
 
         var nameSubarchetypeQ = document.createElement("p");
         nameSubarchetypeQ.classList.add("subarchetypename");
         nameSubarchetypeQ.innerText = info.fields.subarchetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleQ.append(nameSubarchetypeQ);
+        nameWholeQ.append(nameSubarchetypeQ);
  
 
 })
@@ -1633,10 +1709,9 @@ function showInfosR() {
 
         //showing names
 
-        var nameTitleR = document.createElement("li");
-        nameTitleR.classList.add("titlenamer");
-        nameTitleR.innerText = info.fields.title;
-        document.querySelector(".r-class").append(nameTitleR);
+        var nameWholeR = document.createElement("li");
+        nameWholeR.classList.add("titlenamer");
+        document.querySelector(".r-class").append(nameWholeR);
 
         
         /*var nameTitle = document.createElement("li");
@@ -1653,22 +1728,28 @@ function showInfosR() {
           }
         }).appendTo('.r-class');
 
+        var nameTitleR = document.createElement("a");
+        nameTitleR.classList.add("charactername");
+        nameTitleR.innerText = info.fields.title;
+        nameTitleR.href = info.fields.source;
+        nameWholeR.append(nameTitleR);
+
         var nameReferenceR = document.createElement("i");
         nameReferenceR.classList.add("referencename");
         nameReferenceR.innerText = info.fields.reference;
-        nameTitleR.append(nameReferenceR);
+        nameWholeR.append(nameReferenceR);
 
         var nameArchetypeR = document.createElement("p");
         nameArchetypeR.classList.add("archetypename");
         nameArchetypeR.innerText = info.fields.archetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleR.append(nameArchetypeR);
+        nameWholeR.append(nameArchetypeR);
 
         var nameSubarchetypeR = document.createElement("p");
         nameSubarchetypeR.classList.add("subarchetypename");
         nameSubarchetypeR.innerText = info.fields.subarchetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleR.append(nameSubarchetypeR);
+        nameWholeR.append(nameSubarchetypeR);
  
 
 })
@@ -1724,10 +1805,9 @@ function showInfosS() {
 
         //showing names
 
-        var nameTitleS = document.createElement("li");
-        nameTitleS.classList.add("titlenames");
-        nameTitleS.innerText = info.fields.title;
-        document.querySelector(".s-class").append(nameTitleS);
+        var nameWholeS = document.createElement("li");
+        nameWholeS.classList.add("titlenames");
+        document.querySelector(".s-class").append(nameWholeS);
 
         
         /*var nameTitle = document.createElement("li");
@@ -1744,22 +1824,28 @@ function showInfosS() {
           }
         }).appendTo('.s-class');
 
+        var nameTitleS = document.createElement("a");
+        nameTitleS.classList.add("charactername");
+        nameTitleS.innerText = info.fields.title;
+        nameTitleS.href = info.fields.source;
+        nameWholeS.append(nameTitleS);
+
         var nameReferenceS = document.createElement("i");
         nameReferenceS.classList.add("referencename");
         nameReferenceS.innerText = info.fields.reference;
-        nameTitleS.append(nameReferenceS);
+        nameWholeS.append(nameReferenceS);
 
         var nameArchetypeS = document.createElement("p");
         nameArchetypeS.classList.add("archetypename");
         nameArchetypeS.innerText = info.fields.archetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleS.append(nameArchetypeS);
+        nameWholeS.append(nameArchetypeS);
 
         var nameSubarchetypeS = document.createElement("p");
         nameSubarchetypeS.classList.add("subarchetypename");
         nameSubarchetypeS.innerText = info.fields.subarchetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleS.append(nameSubarchetypeS);
+        nameWholeS.append(nameSubarchetypeS);
  
 
 })
@@ -1814,10 +1900,9 @@ function showInfosT() {
 
         //showing names
 
-        var nameTitleT = document.createElement("li");
-        nameTitleT.classList.add("titlenamet");
-        nameTitleT.innerText = info.fields.title;
-        document.querySelector(".t-class").append(nameTitleT);
+        var nameWholeT = document.createElement("li");
+        nameWholeT.classList.add("titlenamet");
+        document.querySelector(".t-class").append(nameWholeT);
 
         
         /*var nameTitle = document.createElement("li");
@@ -1834,22 +1919,28 @@ function showInfosT() {
           }
         }).appendTo('.t-class');
 
+        var nameTitleT = document.createElement("a");
+        nameTitleT.classList.add("charactername");
+        nameTitleT.innerText = info.fields.title;
+        nameTitleT.href = info.fields.source;
+        nameWholeT.append(nameTitleT);
+
         var nameReferenceT = document.createElement("i");
         nameReferenceT.classList.add("referencename");
         nameReferenceT.innerText = info.fields.reference;
-        nameTitleT.append(nameReferenceT);
+        nameWholeT.append(nameReferenceT);
 
         var nameArchetypeT = document.createElement("p");
         nameArchetypeT.classList.add("archetypename");
         nameArchetypeT.innerText = info.fields.archetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleT.append(nameArchetypeT);
+        nameWholeT.append(nameArchetypeT);
 
         var nameSubarchetypeT = document.createElement("p");
         nameSubarchetypeT.classList.add("subarchetypename");
         nameSubarchetypeT.innerText = info.fields.subarchetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleT.append(nameSubarchetypeT);
+        nameWholeT.append(nameSubarchetypeT);
  
 
 })
@@ -1905,10 +1996,9 @@ function showInfosU() {
 
         //showing names
 
-        var nameTitleU = document.createElement("li");
-        nameTitleU.classList.add("titlenameu");
-        nameTitleU.innerText = info.fields.title;
-        document.querySelector(".u-class").append(nameTitleU);
+        var nameWholeU = document.createElement("li");
+        nameWholeU.classList.add("titlenameu");
+        document.querySelector(".u-class").append(nameWholeU);
 
         
         /*var nameTitle = document.createElement("li");
@@ -1925,22 +2015,28 @@ function showInfosU() {
           }
         }).appendTo('.u-class');
 
+        var nameTitleU = document.createElement("a");
+        nameTitleU.classList.add("charactername");
+        nameTitleU.innerText = info.fields.title;
+        nameTitleU.href = info.fields.source;
+        nameWholeU.append(nameTitleU);
+
         var nameReferenceU = document.createElement("i");
         nameReferenceU.classList.add("referencename");
         nameReferenceU.innerText = info.fields.reference;
-        nameTitleU.append(nameReferenceU);
+        nameWholeU.append(nameReferenceU);
 
         var nameArchetypeU = document.createElement("p");
         nameArchetypeU.classList.add("archetypename");
         nameArchetypeU.innerText = info.fields.archetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleU.append(nameArchetypeU);
+        nameWholeU.append(nameArchetypeU);
 
         var nameSubarchetypeU = document.createElement("p");
         nameSubarchetypeU.classList.add("subarchetypename");
         nameSubarchetypeU.innerText = info.fields.subarchetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleU.append(nameSubarchetypeU);
+        nameWholeU.append(nameSubarchetypeU);
  
 
 })
@@ -1995,10 +2091,9 @@ function showInfosV() {
 
         //showing names
 
-        var nameTitleV = document.createElement("li");
-        nameTitleV.classList.add("titlenamev");
-        nameTitleV.innerText = info.fields.title;
-        document.querySelector(".v-class").append(nameTitleV);
+        var nameWholeV = document.createElement("li");
+        nameWholeV.classList.add("titlenamev");
+        document.querySelector(".v-class").append(nameWholeV);
 
         
         /*var nameTitle = document.createElement("li");
@@ -2015,22 +2110,28 @@ function showInfosV() {
           }
         }).appendTo('.v-class');
 
+        var nameTitleV = document.createElement("a");
+        nameTitleV.classList.add("charactername");
+        nameTitleV.innerText = info.fields.title;
+        nameTitleV.href = info.fields.source;
+        nameWholeV.append(nameTitleV);
+
         var nameReferenceV = document.createElement("i");
         nameReferenceV.classList.add("referencename");
         nameReferenceV.innerText = info.fields.reference;
-        nameTitleV.append(nameReferenceV);
+        nameWholeV.append(nameReferenceV);
 
         var nameArchetypeV = document.createElement("p");
         nameArchetypeV.classList.add("archetypename");
         nameArchetypeV.innerText = info.fields.archetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleV.append(nameArchetypeV);
+        nameWholeV.append(nameArchetypeV);
 
         var nameSubarchetypeV = document.createElement("p");
         nameSubarchetypeV.classList.add("subarchetypename");
         nameSubarchetypeV.innerText = info.fields.subarchetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleV.append(nameSubarchetypeV);
+        nameWholeV.append(nameSubarchetypeV);
  
 
 })
@@ -2085,10 +2186,9 @@ function showInfosW() {
 
         //showing names
 
-        var nameTitleW = document.createElement("li");
-        nameTitleW.classList.add("titlenamew");
-        nameTitleW.innerText = info.fields.title;
-        document.querySelector(".w-class").append(nameTitleW);
+        var nameWholeW = document.createElement("li");
+        nameWholeW.classList.add("titlenamew");
+        document.querySelector(".w-class").append(nameWholeW);
 
         
         /*var nameTitle = document.createElement("li");
@@ -2105,22 +2205,28 @@ function showInfosW() {
           }
         }).appendTo('.w-class');
 
+        var nameTitleW = document.createElement("a");
+        nameTitleW.classList.add("charactername");
+        nameTitleW.innerText = info.fields.title;
+        nameTitleW.href = info.fields.source;
+        nameWholeW.append(nameTitleW);
+
         var nameReferenceW = document.createElement("i");
         nameReferenceW.classList.add("referencename");
         nameReferenceW.innerText = info.fields.reference;
-        nameTitleW.append(nameReferenceW);
+        nameWholeW.append(nameReferenceW);
 
         var nameArchetypeW = document.createElement("p");
         nameArchetypeW.classList.add("archetypename");
         nameArchetypeW.innerText = info.fields.archetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleW.append(nameArchetypeW);
+        nameWholeW.append(nameArchetypeW);
 
         var nameSubarchetypeW = document.createElement("p");
         nameSubarchetypeW.classList.add("subarchetypename");
         nameSubarchetypeW.innerText = info.fields.subarchetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleW.append(nameSubarchetypeW);
+        nameWholeW.append(nameSubarchetypeW);
  
 
 })
@@ -2176,16 +2282,9 @@ function showInfosX() {
 
         //showing names
 
-        var nameTitleX = document.createElement("li");
-        nameTitleX.classList.add("titlenamex");
-        nameTitleX.innerText = info.fields.title;
-        document.querySelector(".x-class").append(nameTitleX);
-
-        
-        /*var nameTitle = document.createElement("li");
-        nameTitle.classList.add("titlename");
-        nameTitle.innerText = info.fields.title;
-        document.querySelector("#a-class").append(nameTitle);*/
+        var nameWholeX = document.createElement("li");
+        nameWholeX.classList.add("titlenamex");
+        document.querySelector(".x-class").append(nameWholeX);
 
        //sorts array into alphabetical order
         $('.titlenamex').sort(function(a, b) {
@@ -2196,22 +2295,26 @@ function showInfosX() {
           }
         }).appendTo('.x-class');
 
+        var nameTitleX = document.createElement("a");
+        nameTitleX.classList.add("charactername");
+        nameTitleX.innerText = info.fields.title;
+        nameTitleX.href = info.fields.source;
+        nameWholeX.append(nameTitleX);
+
         var nameReferenceX = document.createElement("i");
         nameReferenceX.classList.add("referencename");
         nameReferenceX.innerText = info.fields.reference;
-        nameTitleX.append(nameReferenceX);
+        nameWholeX.append(nameReferenceX);
 
         var nameArchetypeX = document.createElement("p");
         nameArchetypeX.classList.add("archetypename");
         nameArchetypeX.innerText = info.fields.archetype;
-        /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleX.append(nameArchetypeX);
+        nameWholeX.append(nameArchetypeX);
 
         var nameSubarchetypeX = document.createElement("p");
         nameSubarchetypeX.classList.add("subarchetypename");
         nameSubarchetypeX.innerText = info.fields.subarchetype;
-        /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleX.append(nameSubarchetypeX);
+        nameWholeX.append(nameSubarchetypeX);
  
 
 })
@@ -2267,16 +2370,9 @@ function showInfosY() {
 
         //showing names
 
-        var nameTitleY = document.createElement("li");
-        nameTitleY.classList.add("titlenamey");
-        nameTitleY.innerText = info.fields.title;
-        document.querySelector(".y-class").append(nameTitleY);
-
-        
-        /*var nameTitle = document.createElement("li");
-        nameTitle.classList.add("titlename");
-        nameTitle.innerText = info.fields.title;
-        document.querySelector("#a-class").append(nameTitle);*/
+        var nameWholeY = document.createElement("li");
+        nameWholeY.classList.add("titlenamey");
+        document.querySelector(".y-class").append(nameWholeY);
 
        //sorts array into alphabetical order
         $('.titlenamey').sort(function(a, b) {
@@ -2287,22 +2383,26 @@ function showInfosY() {
           }
         }).appendTo('.y-class');
 
+        var nameTitleY = document.createElement("a");
+        nameTitleY.classList.add("charactername");
+        nameTitleY.innerText = info.fields.title;
+        nameTitleY.href = info.fields.source;
+        nameWholeY.append(nameTitleY);
+
         var nameReferenceY = document.createElement("i");
         nameReferenceY.classList.add("referencename");
         nameReferenceY.innerText = info.fields.reference;
-        nameTitleY.append(nameReferenceY);
+        nameWholeY.append(nameReferenceY);
 
         var nameArchetypeY = document.createElement("p");
         nameArchetypeY.classList.add("archetypename");
         nameArchetypeY.innerText = info.fields.archetype;
-        /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleY.append(nameArchetypeY);
+        nameWholeY.append(nameArchetypeY);
 
         var nameSubarchetypeY = document.createElement("p");
         nameSubarchetypeY.classList.add("subarchetypename");
         nameSubarchetypeY.innerText = info.fields.subarchetype;
-        /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleY.append(nameSubarchetypeY);
+        nameWholeY.append(nameSubarchetypeY);
  
 
 })
@@ -2358,10 +2458,9 @@ function showInfosZ() {
 
         //showing names
 
-        var nameTitleZ = document.createElement("li");
-        nameTitleZ.classList.add("titlenamez");
-        nameTitleZ.innerText = info.fields.title;
-        document.querySelector(".z-class").append(nameTitleZ);
+        var nameWholeZ = document.createElement("li");
+        nameWholeZ.classList.add("titlenamez");
+        document.querySelector(".z-class").append(nameWholeZ);
 
         
         /*var nameTitle = document.createElement("li");
@@ -2378,22 +2477,28 @@ function showInfosZ() {
           }
         }).appendTo('.z-class');
 
+        var nameTitleZ = document.createElement("a");
+        nameTitleZ.classList.add("charactername");
+        nameTitleZ.innerText = info.fields.title;
+        nameTitleZ.href = info.fields.source;
+        nameWholeZ.append(nameTitleZ);
+
         var nameReferenceZ = document.createElement("i");
         nameReferenceZ.classList.add("referencename");
         nameReferenceZ.innerText = info.fields.reference;
-        nameTitleZ.append(nameReferenceZ);
+        nameWholeZ.append(nameReferenceZ);
 
         var nameArchetypeZ = document.createElement("p");
         nameArchetypeZ.classList.add("archetypename");
         nameArchetypeZ.innerText = info.fields.archetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleZ.append(nameArchetypeZ);
+        nameWholeZ.append(nameArchetypeZ);
 
         var nameSubarchetypeZ = document.createElement("p");
         nameSubarchetypeZ.classList.add("subarchetypename");
         nameSubarchetypeZ.innerText = info.fields.subarchetype;
         /*document.querySelector("#a-class").append(nameTitle);*/
-        nameTitleZ.append(nameSubarchetypeZ);
+        nameWholeZ.append(nameSubarchetypeZ);
  
 
 })

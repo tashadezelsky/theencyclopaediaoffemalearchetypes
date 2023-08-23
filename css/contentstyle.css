@@ -111,6 +111,7 @@
         max-height: 335vw;
         max-width: 100vw;
         margin-bottom: -5vh;
+        
     }
 
 
@@ -236,14 +237,10 @@
             font-size: 2vw;
         }
 
-        
 
-        li {
-            list-style-type: none;
-            font-size: 1.08vw;
-            font-weight: 500;
-            line-height: 1vw;
-            margin: 0px 0px 20px 0px;
+        a {
+            text-decoration: none;
+            color: rgba(var(--textblue),1);
         }
 
          i.referencename {
@@ -253,7 +250,6 @@
             white-space: break-spaces;
             display: block;
             font-weight: 500;
-            margin-top: 2.5px;
             
         }
 
@@ -285,9 +281,10 @@
         }
 
         .titlenamea {
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             margin-top: 15px;
             break-inside: avoid;
+            font-size: 1.08vw;
             
         }
 
@@ -306,6 +303,7 @@
             margin-bottom: 5px;
             margin-top: 15px;
             break-inside: avoid;
+            font-size: 1.08vw;
         }
 
         .c-class {
@@ -323,6 +321,7 @@
             margin-bottom: 5px;
             margin-top: 15px;
             break-inside: avoid;
+            font-size: 1.08vw;
         }
 
         .d-class {
@@ -341,6 +340,7 @@
             margin-bottom: 5px;
             margin-top: 15px;
             break-inside: avoid;
+            font-size: 1.08vw;
         }
 
         .e-class {
@@ -359,6 +359,7 @@
             margin-bottom: 5px;
             margin-top: 15px;
             break-inside: avoid;
+            font-size: 1.08vw;
         }
 
         .f-class {
@@ -377,6 +378,7 @@
             margin-bottom: 5px;
             margin-top: 15px;
             break-inside: avoid;
+            font-size: 1.08vw;
         }
 
         .g-class {
@@ -395,6 +397,7 @@
             margin-bottom: 5px;
             margin-top: 15px;
             break-inside: avoid;
+            font-size: 1.08vw;
         }
 
         .h-class {
@@ -414,6 +417,7 @@
             margin-bottom: 5px;
             margin-top: 15px;
             break-inside: avoid;
+            font-size: 1.08vw;
         }
 
         .i-class {
@@ -432,6 +436,7 @@
             margin-bottom: 5px;
             margin-top: 15px;
             break-inside: avoid;
+            font-size: 1.08vw;
         }
 
         .j-class {
@@ -450,6 +455,7 @@
             margin-bottom: 5px;
             margin-top: 15px;
             break-inside: avoid;
+            font-size: 1.08vw;
         }
 
         .k-class {
@@ -468,6 +474,7 @@
             margin-bottom: 5px;
             margin-top: 15px;
             break-inside: avoid;
+            font-size: 1.08vw;
         }
 
         .l-class {
@@ -486,6 +493,7 @@
             margin-bottom: 5px;
             margin-top: 15px;
             break-inside: avoid;
+            font-size: 1.08vw;
         }
 
         .m-class {
@@ -504,6 +512,7 @@
             margin-bottom: 5px;
             margin-top: 15px;
             break-inside: avoid;
+            font-size: 1.08vw;
         }
 
         .n-class {
@@ -523,6 +532,7 @@
             margin-bottom: 5px;
             margin-top: 15px;
             break-inside: avoid;
+            font-size: 1.08vw;
         }
 
         .o-class {
@@ -541,6 +551,7 @@
             margin-bottom: 5px;
             margin-top: 15px;
             break-inside: avoid;
+            font-size: 1.08vw;
         }
 
         .p-class {
@@ -559,6 +570,8 @@
         .titlenamep {
             margin-bottom: 5px;
             margin-top: 15px;
+            break-inside: avoid;
+            font-size: 1.08vw;
         }
 
         .q-class {
@@ -577,6 +590,7 @@
             margin-bottom: 5px;
             margin-top: 15px;
             break-inside: avoid;
+            font-size: 1.08vw;
         }
 
         .r-class {
@@ -595,6 +609,7 @@
             margin-bottom: 5px;
             margin-top: 15px;
             break-inside: avoid;
+            font-size: 1.08vw;
         }
 
         .s-class {
@@ -613,6 +628,7 @@
             margin-bottom: 5px;
             margin-top: 15px;
             break-inside: avoid;
+            font-size: 1.08vw;
         }
 
         .t-class {
@@ -631,6 +647,7 @@
             margin-bottom: 5px;
             margin-top: 15px;
             break-inside: avoid;
+            font-size: 1.08vw;
         }
 
         .u-class {
@@ -650,6 +667,7 @@
             margin-bottom: 5px;
             margin-top: 15px;
             break-inside: avoid;
+            font-size: 1.08vw;
         }
 
         .v-class {
@@ -668,6 +686,7 @@
             margin-bottom: 5px;
             margin-top: 15px;
             break-inside: avoid;
+            font-size: 1.08vw;
         }
 
         .w-class {
@@ -686,6 +705,7 @@
             margin-bottom: 5px;
             margin-top: 15px;
             break-inside: avoid;
+            font-size: 1.08vw;
         }
 
         .x-class {
@@ -704,6 +724,7 @@
             margin-bottom: 5px;
             margin-top: 15px;
             break-inside: avoid;
+            font-size: 1.08vw;
         }
 
         .y-class {
@@ -722,6 +743,7 @@
             margin-bottom: 5px;
             margin-top: 15px;
             break-inside: avoid;
+            font-size: 1.08vw;
         }
 
         .z-class {
@@ -740,6 +762,7 @@
             margin-bottom: 5px;
             margin-top: 15px;
             break-inside: avoid;
+            font-size: 1.08vw;
         }
 
          /* -- footer --*/
